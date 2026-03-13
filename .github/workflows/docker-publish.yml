@@ -55,4 +55,5 @@ jobs:
         with:
           context: .
           push: true
+          file: ./UrbanNoodle/Dockerfile
           tags: ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
