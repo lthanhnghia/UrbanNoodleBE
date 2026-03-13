@@ -2,10 +2,11 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY ["UrbanNoodle.csproj", "./"]
-RUN dotnet restore "./UrbanNoodle.csproj"
+COPY ["UrbanNoodle/UrbanNoodle.csproj", "UrbanNoodle/"]
+RUN dotnet restore "UrbanNoodle/UrbanNoodle.csproj"
 
 COPY . .
+WORKDIR /src/UrbanNoodle
 RUN dotnet publish "UrbanNoodle.csproj" -c Release -o /app/publish
 
 # runtime stage
