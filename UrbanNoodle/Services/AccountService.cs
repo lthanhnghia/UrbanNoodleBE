@@ -37,6 +37,7 @@ namespace UrbanNoodle.Service
         public async Task<IEnumerable<ResponseAccountDTO>> GetAccountAsync
             (int lastId, int size, bool isDelete, string? key)
         {
+            Console.WriteLine("he");
             var query = _context.Account
          .Where(ac => ac.Id > lastId && ac.IsDeleted == isDelete);
 
