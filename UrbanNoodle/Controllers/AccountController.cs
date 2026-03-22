@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UrbanNoodle.Dto;
+using UrbanNoodle.Dto.Account;
 using UrbanNoodle.Service;
 using UrbanNoodle.Service.Interface;
 
@@ -15,6 +16,7 @@ namespace UrbanNoodle.Controllers
         public AccountController(IAccountService accountServices) {
            _accountServices = accountServices;
         }
+
         [HttpPost]
         public async Task<ActionResult<ApiResponse>> CreateAccount([FromBody]AccountDTO request)
         {
@@ -22,8 +24,9 @@ namespace UrbanNoodle.Controllers
             var result = await _accountServices.CreateAccountAsync(request);
             return new ApiResponse(result.Status, result.Description);
         }
+
         [HttpGet]
-        public async Task<IEnumerable<ResponseAccountDTO>> GetAccount(
+        public async Task<IEnumerable<GetAccountDTO>> GetAccount(
         [FromQuery] int lastId = 0,
         [FromQuery] int size = 3,
         [FromQuery] bool isDelete = false,
@@ -31,6 +34,22 @@ namespace UrbanNoodle.Controllers
         {
 
             return await _accountServices.GetAccountAsync(lastId, size, isDelete,key);
+        }
+
+        [HttpPut("{ID}")]
+        public async Task<ActionResult<ApiResponse>> UpdateAccount(int ID, [FromBody] UpdateAccountDto request)
+        {
+            var result = await _accountServices.UpdateAccountAsync(ID,request);
+            return new ApiResponse(result.Status, result.Description);
+
+        }
+
+        [HttpDelete("{ID}")]
+        public async Task<ActionResult<ApiResponse>> DeleteAccount(int ID)
+        {
+            var result = await _accountServices.DeleteAccountAsync(ID);
+            return new ApiResponse(result.Status, result.Description);
+
         }
     }
 }

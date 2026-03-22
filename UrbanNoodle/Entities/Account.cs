@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace UrbanNoodle.Entities;
 
 [Table("accounts")]
-public  class Account
+public class Account
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,6 +18,8 @@ public  class Account
 
     [Column("full_name")]
     public string FullName { get; set; } = null!;
+    [Column("search_name")]
+    public string SearchName { get; set; } = null!;
 
     [Column("phone")]
     public string Phone { get; set; } = null!;
@@ -39,12 +41,13 @@ public  class Account
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    public virtual ICollection<OrdersItem> OrdersItems { get; set; } = new List<OrdersItem>();
+    
 
-    public Account( string fullName, string phone, string role, DateTime createdAt)
+    public Account(string fullName, string searchName ,string phone, string role, DateTime createdAt)
     {
- 
+
         FullName = fullName;
+        SearchName = searchName;
         Phone = phone;
         Role = role;
         CreatedAt = createdAt;

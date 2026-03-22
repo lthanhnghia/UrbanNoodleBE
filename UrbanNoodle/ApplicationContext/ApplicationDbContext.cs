@@ -7,10 +7,10 @@ namespace UrbanNoodle.ApplicationContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Account> Account { get; set; }
-        public DbSet<Category> Categorie { get; set; }
+        public DbSet<Category> Category { get; set; }
         public DbSet<DiningTable> DiningTable { get; set; }
         public DbSet<Food> Food { get; set; }
         public DbSet<Order> Order { get; set; }
-        public DbSet<OrdersItem> OrdersItem { get; set; }
+        public DbSet<OrdersItem> OrderItems { get; set; }
     }
 }

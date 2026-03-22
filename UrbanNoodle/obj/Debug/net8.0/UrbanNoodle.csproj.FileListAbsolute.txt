@@ -223,7 +223,6 @@ C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\De
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UrbanNoodle.props
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UrbanNoodle.props
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\UrbanNoo.7A49FC07.Up2Date
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\UrbanNoodle.dll
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\refint\UrbanNoodle.dll
@@ -232,3 +231,6 @@ C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\De
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\ref\UrbanNoodle.dll
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\bin\Debug\net8.0\DotNetEnv.dll
 C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\bin\Debug\net8.0\Sprache.dll
+C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\UrbanNoodle.sourcelink.json
+C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\admin\Documents\FPT Polytechnic\netstudy\UrbanNoodle\UrbanNoodle\bin\Debug\net8.0\UrbanNoodle.staticwebassets.runtime.json

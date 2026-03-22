@@ -1,6 +1,6 @@
-﻿namespace UrbanNoodle.Dto
+﻿namespace UrbanNoodle.Dto.Account
 {
-    public class ResponseAccountDTO
+    public class GetAccountDTO
     {
         public int id { get; set; }
         public string fullname { get; set; }
@@ -8,7 +8,7 @@
         public string role { get; set; }
         public bool isdelete { get; set; }
 
-        public ResponseAccountDTO(int id, string fullname, string phone, string role, bool isdelete)
+        public GetAccountDTO(int id, string fullname, string phone, string role, bool isdelete)
         {
             this.id = id;
             this.fullname = fullname;

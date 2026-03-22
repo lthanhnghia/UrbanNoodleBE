@@ -40,12 +40,12 @@ namespace UrbanNoodle.Middleware
             {
                 _logger.LogWarning(ex.Message);
 
-                await HandleError(context, 401, "Đăng nhập thất bại");
+                await HandleError(context, 401, ex.Message);
             }
             catch (Exception ex)
             {
                  _logger.LogWarning(ex.Message);
-                await HandleError(context, 500, ex.Message);
+                await HandleError(context, 500, "Lỗi hệ thống");
             }
            
         }
