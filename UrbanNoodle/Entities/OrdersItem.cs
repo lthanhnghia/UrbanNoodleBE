@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace UrbanNoodle.Entities;
 
-[Table("orders_item")]
+[Table("order_items")]
 public class OrdersItem
 {
     [Key]
@@ -19,8 +19,8 @@ public class OrdersItem
     [Column("price")]
     public decimal Price { get; set; }
 
-    [Column("orders_id")]
-    public int OrdersId { get; set; }
+    [Column("order_id")]
+    public int OrderId { get; set; }
 
     [Column("food_id")]
     public int FoodId { get; set; }

@@ -25,14 +25,13 @@ namespace UrbanNoodle.Services
             var food = new Food() { 
               Name = request.Name,
               Price = request.Price,
-              Status = true,
               IsDeleted = false,
               CategoryId= request.CategoryId,
               CreatedAt = DateTime.UtcNow,
               SearchName = UtilService.NormalizeText(request.Name)
             };
             
-            string imageUrl = ImageName(request.Image);
+            string imageUrl = await ImageName(request.Image);
             if(imageUrl== null)
             {
                 throw new BadRequestException("File ảnh không hợp lệ");
@@ -63,7 +62,8 @@ namespace UrbanNoodle.Services
 
             if (!string.IsNullOrEmpty(key))
             {
-                query = query.Where(fd => fd.SearchName.Contains(key));
+                string seachname = UtilService.NormalizeText(key);
+                query = query.Where(fd => fd.SearchName.Contains(seachname));
             }
             var food = await query.OrderBy(fd => fd.Id).Take(size)
                 .Select(fd => new GetFoodDto
@@ -72,7 +72,6 @@ namespace UrbanNoodle.Services
                     Name = fd.Name,
                     Price = fd.Price,
                     image = fd.ImageUrl,
-                    status = fd.Status,
                     CategoryName = fd.Category.Name
                 }).ToListAsync();
             return food;
@@ -88,13 +87,12 @@ namespace UrbanNoodle.Services
             food.Name = request.Name;
             food.SearchName = UtilService.NormalizeText(request.Name);
             food.Price = request.Price;
-            food.Status = request.Status;
             food.UpdatedAt = DateTime.UtcNow;
             food.CategoryId = request.CategoryId;
 
             if (request.Image != null)
             {
-                var imageUrl = ImageName(request.Image);
+                var imageUrl = await ImageName(request.Image);
                 if (imageUrl == null) {
                     throw new BadRequestException("File ảnh không hợp lệ");
                 }
@@ -106,12 +104,13 @@ namespace UrbanNoodle.Services
             return new ApiResponse(200,"Cập nhật thành công");
         }
 
-        private string ImageName(IFormFile file)
+        private async Task<string> ImageName(IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
                 throw new BadRequestException("File ảnh không hợp lệ");
             }
+
             var allowedExtentions = new[] { ".jpg", ".jpeg", ".png", ".webp" };
             var extention = Path.GetExtension(file.FileName).ToLower();
 
@@ -121,18 +120,22 @@ namespace UrbanNoodle.Services
             }
 
             var fileName = Guid.NewGuid() + extention;
+
             var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "foods");
-            if (!File.Exists(folderPath))
+
+            if (!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
             }
+
             var filePath = Path.Combine(folderPath, fileName);
+
             using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
-                 file.CopyToAsync(fileStream);
+                await file.CopyToAsync(fileStream);
             }
-            var imageUrl = $"/images/foods/{fileName}";
-            return imageUrl;
+
+            return $"/images/foods/{fileName}";
         }
     }
 }

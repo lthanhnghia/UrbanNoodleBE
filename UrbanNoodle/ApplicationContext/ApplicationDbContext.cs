@@ -12,5 +12,38 @@ namespace UrbanNoodle.ApplicationContext
         public DbSet<Food> Food { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrdersItem> OrderItems { get; set; }
+
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.OrderedByAccount)
+                .WithMany()
+                .HasForeignKey(o => o.OrderedBy)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.PaidByAccount)
+                .WithMany()
+                .HasForeignKey(o => o.PaidBy)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<Order>()
+            .HasOne(o => o.OrderedByAccount)
+            .WithMany(a => a.OrderedOrders)
+            .HasForeignKey(o => o.OrderedBy)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.PaidByAccount)
+                .WithMany(a => a.PaidOrders)
+                .HasForeignKey(o => o.PaidBy)
+                .OnDelete(DeleteBehavior.Restrict);
+
+        }
     }
 }

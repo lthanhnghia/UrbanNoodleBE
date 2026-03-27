@@ -13,11 +13,14 @@ public  class Order
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("diningtables_id")]
+    [Column("dining_table_id")]
     public int DiningtablesId { get; set; }
 
-    [Column("accounts_id")]
-    public int AccountsId { get; set; }
+    [Column("ordered_by")]
+    public int OrderedBy { get; set; }
+
+    [Column("paid_by")]
+    public int? PaidBy { get; set; }
 
     [Column("total")]
     public decimal Total { get; set; }
@@ -34,7 +37,9 @@ public  class Order
     [Column("paid_at")]
     public DateTime? PathAt { get; set; }
 
-    public virtual Account Accounts { get; set; } = null!;
+    public virtual Account OrderedByAccount { get; set; } = null!;
+
+    public virtual Account? PaidByAccount { get; set; }
 
     public virtual DiningTable Diningtables { get; set; } = null!;
 

@@ -53,8 +53,9 @@ namespace UrbanNoodle.Service
 
             if (!string.IsNullOrEmpty(key))
             {
+                string seachname = UtilService.NormalizeText(key);
                 query = query.Where(ac =>
-                     ac.SearchName.Contains(key) ||
+                     ac.SearchName.Contains(seachname) ||
                     EF.Functions.ILike(ac.Phone, $"%{key}%"));
             }
 

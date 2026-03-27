@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace UrbanNoodle.Entities;
 
 [Table("categories")]
-public  class Category
+public class Category
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

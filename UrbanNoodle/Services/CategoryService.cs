@@ -61,7 +61,8 @@ namespace UrbanNoodle.Services
 
             if (!string.IsNullOrEmpty(key))
             {
-                query = query.Where(ct => ct.SearchName.Contains(key));
+                string seachname = UtilService.NormalizeText(key);
+                query = query.Where(ct => ct.SearchName.Contains(seachname));
             }
             var category = await query.OrderBy(ct => ct.Id).Take(size).
                 Select(ct => new GetCategoryDto

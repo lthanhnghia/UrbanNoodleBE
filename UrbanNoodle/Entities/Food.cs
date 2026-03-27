@@ -24,10 +24,7 @@ public class Food
     public decimal Price { get; set; }
 
     [Column("image_url")]
-    public string ImageUrl { get; set; } = null!;
-
-    [Column("status")]
-    public bool Status { get; set; }
+    public string ImageUrl { get; set; } 
 
     [Column("is_deleted")]
     public bool IsDeleted { get; set; }

@@ -25,8 +25,8 @@ namespace UrbanNoodle.Services
                 var order = new Order()
                 {
                     DiningtablesId = request.DiningTableId,
-                    AccountsId = request.AccountId,
-                    Status = "pending",
+                    OrderedBy = request.AccountId,
+                    Status = "ordered",
                     CreatedAt = DateTime.UtcNow,
                 };
                 _context.Order.Add(order);
@@ -43,7 +43,7 @@ namespace UrbanNoodle.Services
                     }
                     orderItem.Add(new OrdersItem
                     {
-                        OrdersId = order.Id,
+                        OrderId = order.Id,
                         FoodId = item.FoodId,
                         Quantity = item.Quantity,
                         Price = food.Price,

@@ -36,12 +36,9 @@ public class Account
     [Column("updated_at")]
     public DateTime? UpdatedAt { get; set; }
 
-    [Column("must_change_password")]
-    public bool MustChangePassword { get; set; }
 
-    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
-
-    
+    public virtual ICollection<Order> OrderedOrders { get; set; } = new List<Order>();
+    public virtual ICollection<Order> PaidOrders { get; set; } = new List<Order>();
 
     public Account(string fullName, string searchName ,string phone, string role, DateTime createdAt)
     {
