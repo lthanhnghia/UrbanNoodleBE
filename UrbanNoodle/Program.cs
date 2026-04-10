@@ -65,7 +65,7 @@ namespace UrbanNoodle
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5173")
+                    policy.WithOrigins("http://localhost:5173", "https://urbannoodlebe.onrender.com")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
