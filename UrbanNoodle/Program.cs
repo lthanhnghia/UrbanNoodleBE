@@ -81,19 +81,20 @@ namespace UrbanNoodle
             builder.Services.AddScoped<IDiningTable, DiningTableService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             var app = builder.Build();
-
+            app.UseCors("AllowFrontend");
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseCors("AllowFrontend");
+            
 
             app.MapControllers();
 
