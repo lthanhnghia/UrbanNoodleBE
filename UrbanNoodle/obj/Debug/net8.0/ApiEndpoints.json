@@ -56,7 +56,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Account.GetAccountDTO, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "UrbanNoodle.Dto.Account.ListAccountDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

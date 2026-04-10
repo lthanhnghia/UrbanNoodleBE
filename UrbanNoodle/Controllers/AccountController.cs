@@ -12,21 +12,24 @@ namespace UrbanNoodle.Controllers
     public class AccountController : ControllerBase
     {
         IAccountService _accountServices;
-
-        public AccountController(IAccountService accountServices) {
-           _accountServices = accountServices;
+        private readonly ILogger<AccountService> _logger;
+        public AccountController(IAccountService accountServices, ILogger<AccountService> logger )
+        {
+            _accountServices = accountServices;
+            _logger = logger;
         }
 
         [HttpPost]
         public async Task<ActionResult<ApiResponse>> CreateAccount([FromBody]AccountDTO request)
         {
 
-            var result = await _accountServices.CreateAccountAsync(request);
-            return new ApiResponse(result.Status, result.Description);
+            // var result = await _accountServices.CreateAccountAsync(request);
+            _logger.LogInformation($"{request.FullName}");
+            return new ApiResponse(200, "result.Description");
         }
 
         [HttpGet]
-        public async Task<IEnumerable<GetAccountDTO>> GetAccount(
+        public async Task<ListAccountDto> GetAccount(
         [FromQuery] int lastId = 0,
         [FromQuery] int size = 3,
         [FromQuery] bool isDelete = false,

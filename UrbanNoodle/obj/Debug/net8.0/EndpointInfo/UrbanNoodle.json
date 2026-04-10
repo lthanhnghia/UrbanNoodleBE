@@ -97,26 +97,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetAccountDTO"
-                  }
+                  "$ref": "#/components/schemas/ListAccountDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetAccountDTO"
-                  }
+                  "$ref": "#/components/schemas/ListAccountDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetAccountDTO"
-                  }
+                  "$ref": "#/components/schemas/ListAccountDto"
                 }
               }
             }
@@ -1295,6 +1286,22 @@
           "categoryName": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListAccountDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAccountDTO"
+            },
+            "nullable": true
+          },
+          "hasMore": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

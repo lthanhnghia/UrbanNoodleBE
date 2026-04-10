@@ -45,11 +45,12 @@ namespace UrbanNoodle.Service
             return new ApiResponse(200, "Xóa nhân viên thành công");
         }
 
-        public async Task<IEnumerable<GetAccountDTO>> GetAccountAsync
+        public async Task<ListAccountDto> GetAccountAsync
             (int lastId, int size, bool isDelete, string? key)
         {
             var query = _context.Account
          .Where(ac => ac.Id > lastId && ac.IsDeleted == isDelete);
+
 
             if (!string.IsNullOrEmpty(key))
             {
@@ -72,7 +73,9 @@ namespace UrbanNoodle.Service
                     ac.IsDeleted))
                 .ToListAsync();
 
-            return accounts;
+
+            bool hasMore = accounts.Count == size;
+            return new ListAccountDto(accounts,hasMore);
         }
 
         public async Task<ApiResponse> UpdateAccountAsync(int id, UpdateAccountDto request)
