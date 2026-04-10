@@ -65,7 +65,7 @@ namespace UrbanNoodle
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5173", "https://urbannoodlebe.onrender.com")
+                    policy.WithOrigins("http://localhost:5173")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
@@ -81,7 +81,7 @@ namespace UrbanNoodle
             builder.Services.AddScoped<IDiningTable, DiningTableService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             var app = builder.Build();
-            app.UseCors("AllowFrontend");
+          
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -91,6 +91,7 @@ namespace UrbanNoodle
 
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
+            app.UseCors("AllowFrontend");
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();
