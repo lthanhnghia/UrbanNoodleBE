@@ -1,38 +1,17 @@
 [
   {
     "ContainingType": "UrbanNoodle.Controllers.AccountController",
-    "Method": "CreateAccount",
-    "RelativePath": "api/Account",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "UrbanNoodle.Dto.Account.AccountDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "UrbanNoodle.Dto.ApiResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UrbanNoodle.Controllers.AccountController",
-    "Method": "GetAccount",
-    "RelativePath": "api/Account",
+    "Method": "GetHistoryOrder",
+    "RelativePath": "api/Account/historyorder",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
       {
         "Name": "lastId",
         "Type": "System.Int32",
@@ -42,78 +21,11 @@
         "Name": "size",
         "Type": "System.Int32",
         "IsRequired": false
-      },
-      {
-        "Name": "isDelete",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "key",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "UrbanNoodle.Dto.Account.ListAccountDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UrbanNoodle.Controllers.AccountController",
-    "Method": "UpdateAccount",
-    "RelativePath": "api/Account/{ID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "UrbanNoodle.Dto.Account.UpdateAccountDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "UrbanNoodle.Dto.ApiResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UrbanNoodle.Controllers.AccountController",
-    "Method": "DeleteAccount",
-    "RelativePath": "api/Account/{ID}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "UrbanNoodle.Dto.ApiResponse",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Account.HistoryOrderUserDto, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -133,13 +45,39 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "UrbanNoodle.Dto.LoginDto",
+        "Type": "UrbanNoodle.Dto.Auth.LoginDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "UrbanNoodle.Dto.ResponseLoginDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UrbanNoodle.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UrbanNoodle.Dto.Auth.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UrbanNoodle.Dto.ApiResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -204,11 +142,6 @@
         "IsRequired": false
       },
       {
-        "Name": "isDelete",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
         "Name": "key",
         "Type": "System.String",
         "IsRequired": false
@@ -216,7 +149,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Category.GetCategoryDto, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "UrbanNoodle.Dto.Category.ListCategoryDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -293,7 +226,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Category.GetCategoryDto, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Category.CategoryOption, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -304,16 +237,16 @@
     ]
   },
   {
-    "ContainingType": "UrbanNoodle.Controllers.DiningTableController",
-    "Method": "CreateDiningTable",
-    "RelativePath": "api/DiningTable",
+    "ContainingType": "UrbanNoodle.Controllers.ChatController",
+    "Method": "chatAl",
+    "RelativePath": "api/Chat",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "UrbanNoodle.Dto.DiningTable.CreateDiningTableDto",
+        "Type": "UrbanNoodle.Dto.PartDto",
         "IsRequired": true
       }
     ],
@@ -330,99 +263,27 @@
     ]
   },
   {
-    "ContainingType": "UrbanNoodle.Controllers.DiningTableController",
-    "Method": "GetDiningTable",
-    "RelativePath": "api/DiningTable",
+    "ContainingType": "UrbanNoodle.Controllers.DashboardController",
+    "Method": "GetAccount",
+    "RelativePath": "api/Dashboard",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "lastId",
-        "Type": "System.Int32",
+        "Name": "start",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
-        "Name": "size",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "status",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "isDelete",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "key",
-        "Type": "System.String",
+        "Name": "end",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.DiningTable.GetDiningTableDto, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UrbanNoodle.Controllers.DiningTableController",
-    "Method": "UpdateDiningTable",
-    "RelativePath": "api/DiningTable/{ID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "UrbanNoodle.Dto.DiningTable.UpdateDiningTableDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "UrbanNoodle.Dto.ApiResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "UrbanNoodle.Controllers.DiningTableController",
-    "Method": "DeleteFood",
-    "RelativePath": "api/DiningTable/{ID}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "UrbanNoodle.Dto.ApiResponse",
+        "Type": "UrbanNoodle.Dto.DashboardDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -441,7 +302,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Name",
+        "Name": "FoodName",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -492,11 +353,6 @@
         "IsRequired": false
       },
       {
-        "Name": "isDelete",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
         "Name": "key",
         "Type": "System.String",
         "IsRequired": false
@@ -504,7 +360,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[UrbanNoodle.Dto.Food.GetFoodDto, UrbanNoodle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "UrbanNoodle.Dto.Food.ListFood",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -535,11 +391,6 @@
       {
         "Name": "Price",
         "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "Status",
-        "Type": "System.Boolean",
         "IsRequired": false
       },
       {

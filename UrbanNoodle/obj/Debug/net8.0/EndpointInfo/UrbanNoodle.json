@@ -5,58 +5,20 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Account": {
-      "post": {
-        "tags": [
-          "Account"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AccountDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AccountDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AccountDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              }
-            }
-          }
-        }
-      },
+    "/api/Account/historyorder": {
       "get": {
         "tags": [
           "Account"
         ],
         "parameters": [
+          {
+            "name": "accountId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "lastId",
             "in": "query",
@@ -74,21 +36,6 @@
               "format": "int32",
               "default": 3
             }
-          },
-          {
-            "name": "isDelete",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
-            "name": "key",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -97,114 +44,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListAccountDto"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HistoryOrderUserDto"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListAccountDto"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HistoryOrderUserDto"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ListAccountDto"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Account/{ID}": {
-      "put": {
-        "tags": [
-          "Account"
-        ],
-        "parameters": [
-          {
-            "name": "ID",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateAccountDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateAccountDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateAccountDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Account"
-        ],
-        "parameters": [
-          {
-            "name": "ID",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HistoryOrderUserDto"
+                  }
                 }
               }
             }
@@ -253,6 +112,54 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ResponseLoginDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
                 }
               }
             }
@@ -343,14 +250,6 @@
             }
           },
           {
-            "name": "isDelete",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
             "name": "key",
             "in": "query",
             "schema": {
@@ -364,26 +263,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
-                  }
+                  "$ref": "#/components/schemas/ListCategoryDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
-                  }
+                  "$ref": "#/components/schemas/ListCategoryDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
-                  }
+                  "$ref": "#/components/schemas/ListCategoryDto"
                 }
               }
             }
@@ -404,7 +294,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
+                    "$ref": "#/components/schemas/CategoryOption"
                   }
                 }
               },
@@ -412,7 +302,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
+                    "$ref": "#/components/schemas/CategoryOption"
                   }
                 }
               },
@@ -420,7 +310,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GetCategoryDto"
+                    "$ref": "#/components/schemas/CategoryOption"
                   }
                 }
               }
@@ -526,26 +416,26 @@
         }
       }
     },
-    "/api/DiningTable": {
+    "/api/Chat": {
       "post": {
         "tags": [
-          "DiningTable"
+          "Chat"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDiningTableDto"
+                "$ref": "#/components/schemas/PartDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDiningTableDto"
+                "$ref": "#/components/schemas/PartDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDiningTableDto"
+                "$ref": "#/components/schemas/PartDto"
               }
             }
           }
@@ -567,84 +457,6 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ApiResponse"
-                }
-              }
-            }
-          }
-        }
-      },
-      "get": {
-        "tags": [
-          "DiningTable"
-        ],
-        "parameters": [
-          {
-            "name": "lastId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 0
-            }
-          },
-          {
-            "name": "size",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 3
-            }
-          },
-          {
-            "name": "status",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "isDelete",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
-            "name": "key",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetDiningTableDto"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetDiningTableDto"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetDiningTableDto"
-                  }
                 }
               }
             }
@@ -652,76 +464,26 @@
         }
       }
     },
-    "/api/DiningTable/{ID}": {
-      "put": {
+    "/api/Dashboard": {
+      "get": {
         "tags": [
-          "DiningTable"
+          "Dashboard"
         ],
         "parameters": [
           {
-            "name": "ID",
-            "in": "path",
-            "required": true,
+            "name": "start",
+            "in": "query",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "date-time"
             }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDiningTableDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDiningTableDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDiningTableDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "DiningTable"
-        ],
-        "parameters": [
+          },
           {
-            "name": "ID",
-            "in": "path",
-            "required": true,
+            "name": "end",
+            "in": "query",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "date-time"
             }
           }
         ],
@@ -731,17 +493,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/DashboardDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/DashboardDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiResponse"
+                  "$ref": "#/components/schemas/DashboardDto"
                 }
               }
             }
@@ -758,16 +520,28 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "required": [
+                  "CategoryId",
+                  "FoodName",
+                  "Image",
+                  "Price"
+                ],
                 "type": "object",
                 "properties": {
-                  "Name": {
+                  "FoodName": {
+                    "maxLength": 40,
+                    "minLength": 1,
                     "type": "string"
                   },
                   "Price": {
+                    "maximum": 79228162514264337593543950335,
+                    "minimum": 0.01,
                     "type": "number",
                     "format": "double"
                   },
                   "CategoryId": {
+                    "maximum": 2147483647,
+                    "minimum": 1,
                     "type": "integer",
                     "format": "int32"
                   },
@@ -778,7 +552,7 @@
                 }
               },
               "encoding": {
-                "Name": {
+                "FoodName": {
                   "style": "form"
                 },
                 "Price": {
@@ -841,14 +615,6 @@
             }
           },
           {
-            "name": "isDelete",
-            "in": "query",
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
             "name": "key",
             "in": "query",
             "schema": {
@@ -862,26 +628,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetFoodDto"
-                  }
+                  "$ref": "#/components/schemas/ListFood"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetFoodDto"
-                  }
+                  "$ref": "#/components/schemas/ListFood"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/GetFoodDto"
-                  }
+                  "$ref": "#/components/schemas/ListFood"
                 }
               }
             }
@@ -909,19 +666,27 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "required": [
+                  "CategoryId",
+                  "Name",
+                  "Price"
+                ],
                 "type": "object",
                 "properties": {
                   "Name": {
+                    "maxLength": 40,
+                    "minLength": 1,
                     "type": "string"
                   },
                   "Price": {
+                    "maximum": 79228162514264337593543950335,
+                    "minimum": 0.01,
                     "type": "number",
                     "format": "double"
                   },
-                  "Status": {
-                    "type": "boolean"
-                  },
                   "CategoryId": {
+                    "maximum": 2147483647,
+                    "minimum": 1,
                     "type": "integer",
                     "format": "int32"
                   },
@@ -936,9 +701,6 @@
                   "style": "form"
                 },
                 "Price": {
-                  "style": "form"
-                },
-                "Status": {
                   "style": "form"
                 },
                 "CategoryId": {
@@ -1103,39 +865,6 @@
   },
   "components": {
     "schemas": {
-      "AccountDTO": {
-        "required": [
-          "fullName",
-          "password",
-          "phone",
-          "role"
-        ],
-        "type": "object",
-        "properties": {
-          "password": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "fullName": {
-            "maxLength": 50,
-            "minLength": 3,
-            "pattern": "^[\\p{L}\\s]+$",
-            "type": "string"
-          },
-          "phone": {
-            "minLength": 1,
-            "pattern": "^0\\d{9}$",
-            "type": "string",
-            "format": "tel"
-          },
-          "role": {
-            "minLength": 1,
-            "pattern": "^(admin|staff|user)$",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
       "ApiResponse": {
         "type": "object",
         "properties": {
@@ -1170,9 +899,13 @@
         },
         "additionalProperties": false
       },
-      "CreateDiningTableDto": {
+      "CategoryOption": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -1187,7 +920,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "diningTableId": {
+          "addressId": {
             "type": "integer",
             "format": "int32"
           },
@@ -1201,27 +934,35 @@
         },
         "additionalProperties": false
       },
-      "GetAccountDTO": {
+      "DashboardDto": {
         "type": "object",
         "properties": {
-          "id": {
+          "totalAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "numberOrder": {
             "type": "integer",
             "format": "int32"
           },
-          "fullname": {
+          "foodName": {
             "type": "string",
             "nullable": true
           },
-          "phone": {
-            "type": "string",
-            "nullable": true
+          "totalSold": {
+            "type": "integer",
+            "format": "int32"
           },
-          "role": {
-            "type": "string",
-            "nullable": true
+          "numberAccount": {
+            "type": "integer",
+            "format": "int32"
           },
-          "isdelete": {
-            "type": "boolean"
+          "topFood": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TopFoodDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1240,23 +981,6 @@
           "description": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "GetDiningTableDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1280,8 +1004,9 @@
             "type": "string",
             "nullable": true
           },
-          "status": {
-            "type": "boolean"
+          "description": {
+            "type": "string",
+            "nullable": true
           },
           "categoryName": {
             "type": "string",
@@ -1290,13 +1015,76 @@
         },
         "additionalProperties": false
       },
-      "ListAccountDto": {
+      "HistoryItemDto": {
+        "type": "object",
+        "properties": {
+          "foodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HistoryOrderUserDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryItemDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListCategoryDto": {
         "type": "object",
         "properties": {
           "data": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/GetAccountDTO"
+              "$ref": "#/components/schemas/GetCategoryDto"
+            },
+            "nullable": true
+          },
+          "hasMore": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListFood": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetFoodDto"
             },
             "nullable": true
           },
@@ -1309,7 +1097,7 @@
       "LoginDto": {
         "type": "object",
         "properties": {
-          "phone": {
+          "key": {
             "type": "string",
             "nullable": true
           },
@@ -1334,6 +1122,55 @@
         },
         "additionalProperties": false
       },
+      "PartDto": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterDto": {
+        "required": [
+          "email",
+          "fullName",
+          "password",
+          "phone",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "userName": {
+            "maxLength": 15,
+            "minLength": 4,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 6,
+            "type": "string"
+          },
+          "fullName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "phone": {
+            "maxLength": 15,
+            "minLength": 9,
+            "type": "string",
+            "format": "tel"
+          },
+          "email": {
+            "maxLength": 40,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
+          }
+        },
+        "additionalProperties": false
+      },
       "ResponseLoginDTO": {
         "type": "object",
         "properties": {
@@ -1352,43 +1189,20 @@
         },
         "additionalProperties": false
       },
-      "UpdateAccountDto": {
-        "required": [
-          "fullname",
-          "phone",
-          "role"
-        ],
+      "TopFoodDto": {
         "type": "object",
         "properties": {
-          "fullname": {
-            "maxLength": 50,
-            "minLength": 3,
-            "pattern": "^[\\p{L}\\s]+$",
-            "type": "string"
-          },
-          "phone": {
-            "minLength": 1,
-            "pattern": "^0\\d{9}$",
-            "type": "string",
-            "format": "tel"
-          },
-          "role": {
-            "minLength": 1,
-            "pattern": "^(admin|staff|user)$",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdateDiningTableDto": {
-        "type": "object",
-        "properties": {
-          "name": {
+          "foodName": {
             "type": "string",
             "nullable": true
           },
-          "status": {
-            "type": "boolean"
+          "totalOrders": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "revenue": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

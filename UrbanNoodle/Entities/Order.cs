@@ -1,32 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace UrbanNoodle.Entities;
 
 [Table("orders")]
-public  class Order
+public class Order
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("dining_table_id")]
-    public int DiningtablesId { get; set; }
 
-    [Column("ordered_by")]
-    public int OrderedBy { get; set; }
+    [Column("ordered_user")]
+    public int OrderedUser { get; set; }
 
-    [Column("paid_by")]
-    public int? PaidBy { get; set; }
+    [ForeignKey("OrderedUser")]
+    public virtual Account OrderedByUser { get; set; } = null!;
+
+
+
+    [Column("confirmed_admin")]
+    public int? ConfirmedAdmin { get; set; }
+
+    [ForeignKey("ConfirmedAdmin")]
+    public virtual Account? ConfirmedByAdmin { get; set; }
+
 
     [Column("total")]
     public decimal Total { get; set; }
 
-    [Column("status")]
-    public string Status { get; set; } = null!;
+
+    [Column("status_id")]
+    public int StatusId { get; set; }
+
+    [ForeignKey("StatusId")]
+    public virtual Status Status { get; set; } = null!;
+
+
+    [Column("address_id")]
+    public int? AddressId { get; set; }
 
     [Column("created_at")]
     public DateTime CreatedAt { get; set; }
@@ -34,14 +47,10 @@ public  class Order
     [Column("updated_at")]
     public DateTime? UpdatedAt { get; set; }
 
-    [Column("paid_at")]
-    public DateTime? PathAt { get; set; }
 
-    public virtual Account OrderedByAccount { get; set; } = null!;
 
-    public virtual Account? PaidByAccount { get; set; }
 
-    public virtual DiningTable Diningtables { get; set; } = null!;
+
 
     public virtual ICollection<OrdersItem> OrdersItems { get; set; } = new List<OrdersItem>();
 }

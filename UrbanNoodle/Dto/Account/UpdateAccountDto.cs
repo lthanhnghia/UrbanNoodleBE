@@ -9,7 +9,7 @@ namespace UrbanNoodle.Dto.Account
        ErrorMessage = "Tên phải từ 1 đến 50 ký tự.")]
         [RegularExpression(@"^[\p{L}\s]+$",
        ErrorMessage = "Tên chỉ được chứa chữ cái.")]
-        public string Fullname { get; set; }
+        public string fullname { get; set; }
         [Required(ErrorMessage = "Số điện thoại không được để trống.")]
         [Phone]
         [RegularExpression(@"^0\d{9}$",

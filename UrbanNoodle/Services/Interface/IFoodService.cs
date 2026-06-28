@@ -7,9 +7,10 @@ namespace UrbanNoodle.Services.Interface
     public interface IFoodService
     {
         Task<ApiResponse> CreateFoodAsync(CreateFoodDto request);
-        Task<IEnumerable<GetFoodDto>> GetFoodAsync(int lastId, int size, bool isDelete, string? key);
+        Task<ListFood> GetFoodAsync(int lastId, int size,  string? key);
 
         Task<ApiResponse> UpdateFoodAsync(int id, UpdateFoodDto request);
         Task<ApiResponse> DeleteFoodAsync(int id);
+        Task<IEnumerable<GetFoodDto>> GetAllFood();
     }
 }

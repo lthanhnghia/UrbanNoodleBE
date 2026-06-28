@@ -14,5 +14,6 @@
                 .Normalize(System.Text.NormalizationForm.FormC)
                 .ToLower();
         }
+
     }
 }

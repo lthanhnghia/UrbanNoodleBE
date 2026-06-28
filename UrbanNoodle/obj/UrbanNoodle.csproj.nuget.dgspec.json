@@ -70,6 +70,30 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Microsoft.SemanticKernel": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
+            "Microsoft.SemanticKernel.Abstractions": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
+            "Microsoft.SemanticKernel.Agents.Abstractions": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
+            "Microsoft.SemanticKernel.Agents.Core": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
+            "Microsoft.SemanticKernel.Connectors.Google": {
+              "target": "Package",
+              "version": "[1.75.0-alpha, )"
+            },
+            "Microsoft.SemanticKernel.Core": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
@@ -77,6 +101,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Pgvector.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[0.2.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

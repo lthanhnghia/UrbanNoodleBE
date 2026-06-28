@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace UrbanNoodle.Entities;
 
@@ -33,5 +31,5 @@ public class OrdersItem
 
     public virtual Food Food { get; set; } = null!;
 
-    public virtual Order Orders{ get; set; } = null!;
+    public virtual Order Orders { get; set; } = null!;
 }

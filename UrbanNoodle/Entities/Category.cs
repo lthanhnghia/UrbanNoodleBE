@@ -13,8 +13,8 @@ public class Category
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("name")]
-    public string Name { get; set; } = null!;
+    [Column("category_name")]
+    public string CategoryName { get; set; }
 
     [Column("search_name")]
     public string SearchName { get; set; } = null!;
@@ -31,5 +31,6 @@ public class Category
     [Column("description")]
     public string Description { get; set; } = null!;
 
+    [InverseProperty("Category")]
     public virtual ICollection<Food> Foods { get; set; } = new List<Food>();
 }

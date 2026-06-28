@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UrbanNoodle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+065ae0b7486fd9e2f4db9767eb81b97b859739a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e25584f45d168a19d22d24a7ba67db904569425a")]
 [assembly: System.Reflection.AssemblyProductAttribute("UrbanNoodle")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UrbanNoodle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

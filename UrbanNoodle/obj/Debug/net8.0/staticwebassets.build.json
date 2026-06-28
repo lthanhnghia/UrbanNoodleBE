@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/tlTVjBYj8zWJ1IFobgScFlecdET+T1T1AD20RHYaJU=",
+  "Hash": "Inp8zTrC1V/PN+bHWy3nAsWPJk0hK2DCHv6R1YHkz8U=",
   "Source": "UrbanNoodle",
   "BasePath": "_content/UrbanNoodle",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5da5a47d-7baf-49da-897a-23a55e116da4.jpg",
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
       "SourceId": "UrbanNoodle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
       "BasePath": "_content/UrbanNoodle",
-      "RelativePath": "images/foods/5da5a47d-7baf-49da-897a-23a55e116da4#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,19 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vcl4oqobyl",
-      "Integrity": "4bp0g5gNWu3gp3/sTvd+h1xRKbU4lgK1CGREXvNTp4c=",
+      "Fingerprint": "fclnnej5gj",
+      "Integrity": "MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\foods\\5da5a47d-7baf-49da-897a-23a55e116da4.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\foods\\2f9ede7d-3d63-445c-9d99-8c391176e170.jpg"
     },
     {
-      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg",
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
       "SourceId": "UrbanNoodle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
       "BasePath": "_content/UrbanNoodle",
-      "RelativePath": "images/foods/5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,19 +52,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "deohhc9gwq",
-      "Integrity": "xYZDutXc+9xto8EvNVhMms9WHE3CtmD2JsbUr9p4Fgc=",
+      "Fingerprint": "tdazxf02f7",
+      "Integrity": "rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\foods\\5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\foods\\45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg"
     },
     {
-      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp",
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\51b71d70-3264-4426-b276-1aa45963fb6a.webp",
       "SourceId": "UrbanNoodle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
       "BasePath": "_content/UrbanNoodle",
-      "RelativePath": "images/foods/ce11cdbc-6fff-4f46-a972-b4e8f83923d8#[.{fingerprint}]?.webp",
+      "RelativePath": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -73,19 +73,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yj12ty9yby",
-      "Integrity": "onaOCvee0nuEA4PdNRCXpWRe3nSS1wp1xH+3lYZ0WXg=",
+      "Fingerprint": "nm8e4cvc3u",
+      "Integrity": "L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\foods\\ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp"
+      "OriginalItemSpec": "wwwroot\\images\\foods\\51b71d70-3264-4426-b276-1aa45963fb6a.webp"
     },
     {
-      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg",
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
       "SourceId": "UrbanNoodle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
       "BasePath": "_content/UrbanNoodle",
-      "RelativePath": "images/foods/eb7c7ca3-15a9-478c-ac89-50ee2741f942#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -94,17 +94,185 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "s1t2x099ky",
-      "Integrity": "cG9ckk6hdDLWReo0AIeblw157dxNGGd03VI0SO8RPKc=",
+      "Fingerprint": "65mck3emp0",
+      "Integrity": "5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\foods\\eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\foods\\57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d4k6ylp30l",
+      "Integrity": "XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\584a31fa-d1e4-4bea-8952-0b1170d94304.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9q7vjr30bd",
+      "Integrity": "4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2e7wvejwn9",
+      "Integrity": "lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nm8e4cvc3u",
+      "Integrity": "L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fuaa2tb3ap",
+      "Integrity": "mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nm8e4cvc3u",
+      "Integrity": "L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fclnnej5gj",
+      "Integrity": "MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "SourceId": "UrbanNoodle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\",
+      "BasePath": "_content/UrbanNoodle",
+      "RelativePath": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c9tvqr9b9z",
+      "Integrity": "IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foods\\f63042c5-49b6-4baf-805f-9adab94e7b7c.webp"
     }
   ],
   "Endpoints": [
     {
-      "Route": "images/foods/5da5a47d-7baf-49da-897a-23a55e116da4.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5da5a47d-7baf-49da-897a-23a55e116da4.jpg",
+      "Route": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.fclnnej5gj.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -113,7 +281,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "171755"
+          "Value": "173954"
         },
         {
           "Name": "Content-Type",
@@ -121,48 +289,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4bp0g5gNWu3gp3/sTvd+h1xRKbU4lgK1CGREXvNTp4c=\""
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:17:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4bp0g5gNWu3gp3/sTvd+h1xRKbU4lgK1CGREXvNTp4c="
-        }
-      ]
-    },
-    {
-      "Route": "images/foods/5da5a47d-7baf-49da-897a-23a55e116da4.vcl4oqobyl.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5da5a47d-7baf-49da-897a-23a55e116da4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "171755"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4bp0g5gNWu3gp3/sTvd+h1xRKbU4lgK1CGREXvNTp4c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:17:29 GMT"
+          "Value": "Wed, 24 Jun 2026 13:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -172,21 +303,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vcl4oqobyl"
+          "Value": "fclnnej5gj"
         },
         {
           "Name": "label",
-          "Value": "images/foods/5da5a47d-7baf-49da-897a-23a55e116da4.jpg"
+          "Value": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4bp0g5gNWu3gp3/sTvd+h1xRKbU4lgK1CGREXvNTp4c="
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
         }
       ]
     },
     {
-      "Route": "images/foods/5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.deohhc9gwq.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg",
+      "Route": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -195,7 +326,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "144576"
+          "Value": "173954"
         },
         {
           "Name": "Content-Type",
@@ -203,56 +334,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xYZDutXc+9xto8EvNVhMms9WHE3CtmD2JsbUr9p4Fgc=\""
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 04:09:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "deohhc9gwq"
-        },
-        {
-          "Name": "label",
-          "Value": "images/foods/5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xYZDutXc+9xto8EvNVhMms9WHE3CtmD2JsbUr9p4Fgc="
-        }
-      ]
-    },
-    {
-      "Route": "images/foods/5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\5f6c5158-bb3c-40b1-b09d-cbe0eb7e6f39.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "144576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xYZDutXc+9xto8EvNVhMms9WHE3CtmD2JsbUr9p4Fgc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 04:09:38 GMT"
+          "Value": "Wed, 24 Jun 2026 13:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -262,13 +348,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xYZDutXc+9xto8EvNVhMms9WHE3CtmD2JsbUr9p4Fgc="
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
         }
       ]
     },
     {
-      "Route": "images/foods/ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp",
+      "Route": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -277,7 +363,89 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "274234"
+          "Value": "159596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:25:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.tdazxf02f7.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:25:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tdazxf02f7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.nm8e4cvc3u.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\51b71d70-3264-4426-b276-1aa45963fb6a.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
         },
         {
           "Name": "Content-Type",
@@ -285,27 +453,35 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"onaOCvee0nuEA4PdNRCXpWRe3nSS1wp1xH+3lYZ0WXg=\""
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:16:11 GMT"
+          "Value": "Wed, 24 Jun 2026 13:23:04 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
+          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-onaOCvee0nuEA4PdNRCXpWRe3nSS1wp1xH+3lYZ0WXg="
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
         }
       ]
     },
     {
-      "Route": "images/foods/ce11cdbc-6fff-4f46-a972-b4e8f83923d8.yj12ty9yby.webp",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp",
+      "Route": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\51b71d70-3264-4426-b276-1aa45963fb6a.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -314,7 +490,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "274234"
+          "Value": "56906"
         },
         {
           "Name": "Content-Type",
@@ -322,56 +498,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"onaOCvee0nuEA4PdNRCXpWRe3nSS1wp1xH+3lYZ0WXg=\""
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:16:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "yj12ty9yby"
-        },
-        {
-          "Name": "label",
-          "Value": "images/foods/ce11cdbc-6fff-4f46-a972-b4e8f83923d8.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-onaOCvee0nuEA4PdNRCXpWRe3nSS1wp1xH+3lYZ0WXg="
-        }
-      ]
-    },
-    {
-      "Route": "images/foods/eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "175643"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cG9ckk6hdDLWReo0AIeblw157dxNGGd03VI0SO8RPKc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:19:24 GMT"
+          "Value": "Wed, 24 Jun 2026 13:23:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -381,13 +512,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cG9ckk6hdDLWReo0AIeblw157dxNGGd03VI0SO8RPKc="
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
         }
       ]
     },
     {
-      "Route": "images/foods/eb7c7ca3-15a9-478c-ac89-50ee2741f942.s1t2x099ky.jpg",
-      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg",
+      "Route": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.65mck3emp0.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -396,7 +527,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "175643"
+          "Value": "158346"
         },
         {
           "Name": "Content-Type",
@@ -404,11 +535,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cG9ckk6hdDLWReo0AIeblw157dxNGGd03VI0SO8RPKc=\""
+          "Value": "\"5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Mar 2026 08:19:24 GMT"
+          "Value": "Wed, 24 Jun 2026 13:24:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -418,15 +549,708 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s1t2x099ky"
+          "Value": "65mck3emp0"
         },
         {
           "Name": "label",
-          "Value": "images/foods/eb7c7ca3-15a9-478c-ac89-50ee2741f942.jpg"
+          "Value": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cG9ckk6hdDLWReo0AIeblw157dxNGGd03VI0SO8RPKc="
+          "Value": "sha256-5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:24:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.d4k6ylp30l.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d4k6ylp30l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.9q7vjr30bd.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9q7vjr30bd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:26:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.2e7wvejwn9.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2e7wvejwn9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.nm8e4cvc3u.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:20:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:20:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.fuaa2tb3ap.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fuaa2tb3ap"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.nm8e4cvc3u.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.fclnnej5gj.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fclnnej5gj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.c9tvqr9b9z.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:30:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9tvqr9b9z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "AssetFile": "C:\\Users\\admin\\Documents\\FPT Polytechnic\\netstudy\\UrbanNoodle\\UrbanNoodle\\wwwroot\\images\\foods\\f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:30:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk="
         }
       ]
     }

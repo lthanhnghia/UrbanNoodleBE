@@ -6,16 +6,16 @@
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string image { get; set; }
-        public bool status { get; set; }
+        public string Description { get; set; }
         public string CategoryName { get; set; }
 
-        public GetFoodDto(int id,string name, decimal price, string image, bool status, string categoryName)
+        public GetFoodDto(int id, string name, decimal price, string image, string categoryName)
         {
             Id = id;
             Name = name;
             Price = price;
             this.image = image;
-            this.status = status;
+
             CategoryName = categoryName;
         }
 

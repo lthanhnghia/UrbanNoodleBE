@@ -6,8 +6,8 @@ namespace UrbanNoodle.Services.Interface
     public interface ICategoryService
     {
         Task<ApiResponse> CreateCategoryAsync(CategoryDto request);
-        Task<IEnumerable<GetCategoryDto>> GetCategoryAsync(int lastId, int size, bool isDelete, string? key);
-        Task<IEnumerable<GetCategoryDto>> GetOptionCategoryAsync();
+        Task<ListCategoryDto> GetCategoryAsync(int lastId, int size, string? key);
+        Task<IEnumerable<CategoryOption>> GetOptionCategoryAsync();
         Task<ApiResponse> UpdateCategoryAsync(int id, CategoryDto request);
         Task<ApiResponse> DeleteCategoryAsync(int id);
     }

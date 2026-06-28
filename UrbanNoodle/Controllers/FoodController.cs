@@ -43,14 +43,13 @@ namespace UrbanNoodle.Controllers
 
         }
         [HttpGet]
-        public async Task<IEnumerable<GetFoodDto>> GetFood(
+        public async Task<ListFood> GetFood(
         [FromQuery] int lastId = 0,
         [FromQuery] int size = 3,
-        [FromQuery] bool isDelete = false,
         [FromQuery] string? key = null)
         {
 
-            return await _foodService.GetFoodAsync(lastId, size, isDelete, key);
+            return await _foodService.GetFoodAsync(lastId, size,  key);
         }
     }
 }

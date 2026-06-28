@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UrbanNoodle.Dto;
+using UrbanNoodle.Dto.Auth;
 using UrbanNoodle.Service.Interface;
 
 namespace UrbanNoodle.Controllers
@@ -15,12 +15,21 @@ namespace UrbanNoodle.Controllers
         {
             _authService = authService;
         }
+
         [HttpPost("login")]
         public async Task<ActionResult<ResponseLoginDTO>> Login(LoginDto request)
         {
             var result = await _authService.LoginAsync(request);
             return result;
         }
+
+        [HttpPost("register")]
+        public async Task<ActionResult<ApiResponse>> Register(RegisterDto request)
+        {
+            var result = await _authService.RegisterAsync(request);
+            return result;
+        }
+
 
         [Authorize(Roles = "staff")]
         [HttpGet("staff-only")]

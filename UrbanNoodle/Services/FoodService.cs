@@ -1,14 +1,11 @@
-﻿using System.Linq;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using UrbanNoodle.ApplicationContext;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Dto.Food;
 using UrbanNoodle.Entities;
 using UrbanNoodle.Exceptions;
-using UrbanNoodle.Service;
 using UrbanNoodle.Services.Interface;
 using UrbanNoodle.Utils;
-
 namespace UrbanNoodle.Services
 {
     public class FoodService : IFoodService
@@ -22,22 +19,23 @@ namespace UrbanNoodle.Services
         }
         public async Task<ApiResponse> CreateFoodAsync(CreateFoodDto request)
         {
-            var food = new Food() { 
-              Name = request.Name,
-              Price = request.Price,
-              IsDeleted = false,
-              CategoryId= request.CategoryId,
-              CreatedAt = DateTime.UtcNow,
-              SearchName = UtilService.NormalizeText(request.Name)
+            var food = new Food()
+            {
+                FoodName = request.FoodName,
+                Price = request.Price,
+                IsDeleted = false,
+                CategoryId = request.CategoryId,
+                CreatedAt = DateTime.UtcNow,
+                SearchName = UtilService.NormalizeText(request.FoodName)
             };
-            
+
             string imageUrl = await ImageName(request.Image);
-            if(imageUrl== null)
+            if (imageUrl == null)
             {
                 throw new BadRequestException("File ảnh không hợp lệ");
             }
             food.ImageUrl = imageUrl;
-            _logger.LogInformation("image = "+food.ImageUrl);
+            _logger.LogInformation("image = " + food.ImageUrl);
             _context.Food.Add(food);
             await _context.SaveChangesAsync();
             return new ApiResponse(200, "Thêm mới thành công");
@@ -56,25 +54,41 @@ namespace UrbanNoodle.Services
             return new ApiResponse(200, "Xóa thành công đồ ăn");
         }
 
-        public async Task<IEnumerable<GetFoodDto>> GetFoodAsync(int lastId, int size, bool isDelete, string? key)
+        public async Task<IEnumerable<GetFoodDto>> GetAllFood()
         {
-            var query = _context.Food.Where(fd => fd.Id>lastId && fd.IsDeleted==isDelete);
+            var query = await _context.Food.OrderBy(fd => fd.Id)
+                 .Select(fd => new GetFoodDto
+                 {
+                     Id = fd.Id,
+                     Name = fd.FoodName,
+                     Price = fd.Price,
+                     image = fd.ImageUrl,
+                     CategoryName = fd.Category.CategoryName
+                 }).ToListAsync();
+            return query;
+        }
+
+        public async Task<ListFood> GetFoodAsync(int lastId, int size, string? key)
+        {
+            var query = _context.Food.OrderBy(fd => fd.Id)
+                .Where(fd => fd.Id > lastId && fd.IsDeleted == false);
 
             if (!string.IsNullOrEmpty(key))
             {
                 string seachname = UtilService.NormalizeText(key);
                 query = query.Where(fd => fd.SearchName.Contains(seachname));
             }
-            var food = await query.OrderBy(fd => fd.Id).Take(size)
+            var food = await query.Take(size)
                 .Select(fd => new GetFoodDto
                 {
                     Id = fd.Id,
-                    Name = fd.Name,
+                    Name = fd.FoodName,
                     Price = fd.Price,
                     image = fd.ImageUrl,
-                    CategoryName = fd.Category.Name
+                    CategoryName = fd.Category.CategoryName
                 }).ToListAsync();
-            return food;
+            bool hasMore = food.Count == size;
+            return new ListFood(food, hasMore);
         }
 
         public async Task<ApiResponse> UpdateFoodAsync(int id, UpdateFoodDto request)
@@ -84,7 +98,7 @@ namespace UrbanNoodle.Services
             {
                 throw new NotFoundException("Không có đồ ăn này trong cửa hàng");
             }
-            food.Name = request.Name;
+            food.FoodName = request.Name;
             food.SearchName = UtilService.NormalizeText(request.Name);
             food.Price = request.Price;
             food.UpdatedAt = DateTime.UtcNow;
@@ -93,15 +107,17 @@ namespace UrbanNoodle.Services
             if (request.Image != null)
             {
                 var imageUrl = await ImageName(request.Image);
-                if (imageUrl == null) {
+                if (imageUrl == null)
+                {
                     throw new BadRequestException("File ảnh không hợp lệ");
                 }
                 food.ImageUrl = imageUrl;
             }
+            _logger.LogInformation("image = " + food.ImageUrl);
             _context.Food.Update(food);
             await _context.SaveChangesAsync();
 
-            return new ApiResponse(200,"Cập nhật thành công");
+            return new ApiResponse(200, "Cập nhật thành công");
         }
 
         private async Task<string> ImageName(IFormFile file)

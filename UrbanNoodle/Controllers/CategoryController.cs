@@ -4,6 +4,7 @@ using UrbanNoodle.Dto.Account;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Services.Interface;
 using UrbanNoodle.Dto.Category;
+using UrbanNoodle.Service;
 
 namespace UrbanNoodle.Controllers
 {
@@ -12,8 +13,10 @@ namespace UrbanNoodle.Controllers
     public class CategoryController : ControllerBase
     {
         ICategoryService _category;
-        public CategoryController(ICategoryService category) { 
+        private readonly ILogger<CategoryController> _logger;
+        public CategoryController(ICategoryService category, ILogger<CategoryController> logger) { 
              _category = category;
+            _logger = logger;
         }
         [HttpPost]
         public async Task<ActionResult<ApiResponse>> CreateCategory([FromBody] CategoryDto request)
@@ -23,18 +26,18 @@ namespace UrbanNoodle.Controllers
             return new ApiResponse(result.Status, result.Description);
         }
         [HttpGet]
-        public async Task<IEnumerable<GetCategoryDto>> GetCategory(
+        public async Task<ListCategoryDto> GetCategory(
         [FromQuery] int lastId = 0,
         [FromQuery] int size = 3,
-        [FromQuery] bool isDelete = false,
+
         [FromQuery] string? key = null)
         {
 
-            return await _category.GetCategoryAsync(lastId, size, isDelete, key);
+            return await _category.GetCategoryAsync(lastId, size,  key);
         }
 
         [HttpGet("options")]
-        public async Task<IEnumerable<GetCategoryDto>> GetOptionCategory()
+        public async Task<IEnumerable<CategoryOption>> GetOptionCategory()
         {
 
             return await _category.GetOptionCategoryAsync();
