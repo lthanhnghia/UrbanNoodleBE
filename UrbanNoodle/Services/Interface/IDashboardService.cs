@@ -4,6 +4,6 @@ namespace UrbanNoodle.Services.Interface
 {
     public interface IDashboardService
     {
-        public Task<DashboardDto> GetDashboard(DateTime? start,DateTime? end);
+        public Task<DashboardSummaryDto> GetDashboardStatisticsAsync();
     }
 }

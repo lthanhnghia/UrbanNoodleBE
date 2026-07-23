@@ -1,9 +1,11 @@
 ﻿
 using System.Text;
 using System.Text.Json;
+using System.Threading.RateLimiting;
 using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.SemanticKernel;
@@ -35,6 +37,7 @@ namespace UrbanNoodle
                 options.UseNpgsql(Environment.GetEnvironmentVariable("DEFAULT_CONNECTION"),
                 npgsqlOptions => npgsqlOptions.UseVector()
                 ));
+
             builder.Services.AddControllers()
                 .ConfigureApiBehaviorOptions(options =>
                 {
@@ -91,7 +94,7 @@ namespace UrbanNoodle
         {
             OnChallenge = async context =>
             {
-                // chặn response mặc định
+
                 context.HandleResponse();
 
                 context.Response.StatusCode = 401;
@@ -124,7 +127,8 @@ namespace UrbanNoodle
                 {
                     policy.WithOrigins("http://localhost:5173")
                           .AllowAnyHeader()
-                          .AllowAnyMethod();
+                          .AllowAnyMethod()
+                         .AllowCredentials();
                 });
             });
 
@@ -134,11 +138,11 @@ namespace UrbanNoodle
 
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
-            //builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IFoodService, FoodService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
-            //builder.Services.AddScoped<IDashboardService, DashboardService>();
-
+            builder.Services.AddScoped<IDashboardService, DashboardService>();
+            builder.Services.AddScoped<IStatisticsRepository, StatisticsRepository>();
             builder.Services.AddScoped<IAlService, AIService>();
             builder.Services.AddScoped<IKnowledgeChunksRepository, KnowledgeChunksRepository>();
             builder.Services.AddMemoryCache();
@@ -147,7 +151,64 @@ namespace UrbanNoodle
             builder.Logging.AddFilter("Microsoft.SemanticKernel", LogLevel.Trace);
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddDistributedMemoryCache();
-            builder.Services.AddSession();
+
+            builder.Services.AddRateLimiter(options =>
+            {
+
+                options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(context =>
+                    RateLimitPartition.GetFixedWindowLimiter(
+                        partitionKey: context.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+                        factory: _ => new FixedWindowRateLimiterOptions
+                        {
+                            PermitLimit = 100,
+                            Window = TimeSpan.FromMinutes(1)
+                        }));
+
+
+
+                options.AddFixedWindowLimiter("LoginPolicy", opt =>
+                {
+                    opt.PermitLimit = 5;
+                    opt.Window = TimeSpan.FromMinutes(5);
+                    opt.QueueLimit = 0;
+                });
+                options.AddFixedWindowLimiter("RegisterPolicy", opt =>
+                {
+                    opt.PermitLimit = 3;
+                    opt.Window = TimeSpan.FromMinutes(60);
+                    opt.QueueLimit = 0;
+                });
+                options.AddFixedWindowLimiter("ChatbotPolicy", opt =>
+                {
+                    opt.PermitLimit = 10;
+                    opt.Window = TimeSpan.FromMinutes(1);
+                    opt.QueueLimit = 0;
+                });
+                options.AddFixedWindowLimiter("OrderPolicy", opt =>
+                {
+                    opt.PermitLimit = 10;
+                    opt.Window = TimeSpan.FromMinutes(1);
+                    opt.QueueLimit = 0;
+                });
+                options.AddFixedWindowLimiter("AdminPolicy", opt =>
+                {
+                    opt.PermitLimit = 60;                   // rộng hơn nhiều so với client, vì admin cần thao tác nhanh
+                    opt.Window = TimeSpan.FromMinutes(1);
+                    opt.QueueLimit = 5;                     // cho phép chờ nhiều hơn, tránh admin bị 429 khi thao tác dồn dập hợp lệ
+                });
+
+                options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+                options.OnRejected = async (context, cancellationToken) =>
+                {
+                    context.HttpContext.Response.ContentType = "application/json";
+                    var response = new ApiResponse(429, "Bạn thao tác quá nhanh, vui lòng thử lại sau ít phút");
+                    await context.HttpContext.Response.WriteAsJsonAsync(response, cancellationToken);
+                };
+            });
+
+
+
             builder.Services.AddGoogleAIGeminiChatCompletion(
                 modelId: modelId,
                 apiKey: apiKey
@@ -167,19 +228,23 @@ namespace UrbanNoodle
                ]
             );
 
-            builder.Services.AddTransient((serviceProvider) =>
+            builder.Services.AddScoped((serviceProvider) =>
             {
                 KernelPluginCollection pluginCollection = serviceProvider.GetRequiredService<KernelPluginCollection>();
                 return new Kernel(serviceProvider, pluginCollection);
             });
             builder.Services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(20); // Sau 20 phút khách không tương tác thì xóa Session
-                options.Cookie.HttpOnly = true;                // Bảo mật Cookie chống tấn công XSS
-                options.Cookie.IsEssential = true;             // Bắt buộc phải có để chạy luồng Session
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+
+
+                options.Cookie.SameSite = SameSiteMode.None;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
             });
             builder.Services.AddHttpContextAccessor();
-
+            builder.Services.AddLogging(b => b.AddConsole().SetMinimumLevel(LogLevel.Trace));
             var app = builder.Build();
             app.UseSession();
             // Configure the HTTP request pipeline.
@@ -188,10 +253,13 @@ namespace UrbanNoodle
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseRateLimiter();
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
-            app.UseCors("AllowFrontend");
+            app.UseCors(policy => policy
+                .WithOrigins("http://localhost:5173")
+                .AllowAnyMethod()
+                .AllowAnyHeader());
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();

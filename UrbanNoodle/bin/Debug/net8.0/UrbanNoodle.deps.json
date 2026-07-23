@@ -12,12 +12,12 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
           "Microsoft.EntityFrameworkCore.Design": "8.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
-          "Microsoft.SemanticKernel": "1.75.0",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Agents.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Agents.Core": "1.75.0",
-          "Microsoft.SemanticKernel.Connectors.Google": "1.75.0-alpha",
-          "Microsoft.SemanticKernel.Core": "1.75.0",
+          "Microsoft.SemanticKernel": "1.77.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Agents.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Agents.Core": "1.77.0",
+          "Microsoft.SemanticKernel.Connectors.Google": "1.77.0-alpha",
+          "Microsoft.SemanticKernel.Core": "1.77.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
           "Pgvector.EntityFrameworkCore": "0.2.2",
@@ -124,12 +124,10 @@
           }
         }
       },
-      "Microsoft.Agents.AI.Abstractions/1.0.0-preview.251009.1": {
+      "Microsoft.Agents.AI.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.AI.Abstractions": "10.5.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.6",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.6",
-          "System.Diagnostics.DiagnosticSource": "10.0.6"
+          "System.Text.Json": "10.0.6"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Agents.AI.Abstractions.dll": {
@@ -716,19 +714,19 @@
           }
         }
       },
-      "Microsoft.SemanticKernel/1.75.0": {
+      "Microsoft.SemanticKernel/1.77.0": {
         "dependencies": {
-          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Abstractions/1.75.0": {
+      "Microsoft.SemanticKernel.Abstractions/1.77.0": {
         "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.1",
           "Microsoft.Extensions.AI": "10.5.0",
@@ -738,86 +736,86 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Abstractions.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Agents.Abstractions/1.75.0": {
+      "Microsoft.SemanticKernel.Agents.Abstractions/1.77.0": {
         "dependencies": {
-          "Microsoft.Agents.AI.Abstractions": "1.0.0-preview.251009.1",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
+          "Microsoft.Agents.AI.Abstractions": "1.0.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
           "System.Text.Json": "10.0.6"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Agents.Abstractions.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Agents.Core/1.75.0": {
+      "Microsoft.SemanticKernel.Agents.Core/1.77.0": {
         "dependencies": {
-          "Microsoft.SemanticKernel.Agents.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Agents.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Agents.Core.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.75.0": {
+      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.77.0": {
         "dependencies": {
           "Azure.AI.OpenAI": "2.9.0-beta.1",
-          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.Google/1.75.0-alpha": {
+      "Microsoft.SemanticKernel.Connectors.Google/1.77.0-alpha": {
         "dependencies": {
           "Google.Apis.Auth": "1.73.0",
           "Google.GenAI": "0.11.0",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.Google.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.OpenAI/1.75.0": {
+      "Microsoft.SemanticKernel.Connectors.OpenAI/1.77.0": {
         "dependencies": {
           "Microsoft.Extensions.AI.OpenAI": "10.5.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0",
           "OpenAI": "2.10.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
-      "Microsoft.SemanticKernel.Core/1.75.0": {
+      "Microsoft.SemanticKernel.Core/1.77.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "10.0.2",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
           "System.Numerics.Tensors": "10.0.6"
         },
         "runtime": {
           "lib/net8.0/Microsoft.SemanticKernel.Core.dll": {
-            "assemblyVersion": "1.75.0.0",
-            "fileVersion": "1.75.0.0"
+            "assemblyVersion": "1.77.0.0",
+            "fileVersion": "1.77.0.0"
           }
         }
       },
@@ -1898,12 +1896,12 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "Microsoft.Agents.AI.Abstractions/1.0.0-preview.251009.1": {
+    "Microsoft.Agents.AI.Abstractions/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8Bfppenx9ETyhDsJ30Hixy/zf/t2t/vt03+jl7uLd5XgadZo+xQcEYa16ANHUAcJzBH7ou85sSRO8MohNiFgiw==",
-      "path": "microsoft.agents.ai.abstractions/1.0.0-preview.251009.1",
-      "hashPath": "microsoft.agents.ai.abstractions.1.0.0-preview.251009.1.nupkg.sha512"
+      "sha512": "sha512-xvQkgKyKk/9uvaejku15MF7kQHDCCslSWgb7YQShWxivtgjgFS5NivTDAVcwXAL5MKakLmDAyUCKzzI6h8Xvzg==",
+      "path": "microsoft.agents.ai.abstractions/1.0.0",
+      "hashPath": "microsoft.agents.ai.abstractions.1.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.2": {
       "type": "package",
@@ -2199,61 +2197,61 @@
       "path": "microsoft.openapi/1.6.14",
       "hashPath": "microsoft.openapi.1.6.14.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel/1.75.0": {
+    "Microsoft.SemanticKernel/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qDUnqxj3wbbM2i9iqcHdEjy3CQA8SdM/iJvb+LCi5ZAaq16H/ILOKfmEF0/YMgO8sRy4rSjF50kIW906uZVeww==",
-      "path": "microsoft.semantickernel/1.75.0",
-      "hashPath": "microsoft.semantickernel.1.75.0.nupkg.sha512"
+      "sha512": "sha512-A8HtEy+gKpOFPPS/IiJAcFIHbP0l6qAMKtg9bxw6cJJMUasWhLyU0weKi6FaL3V5lLuqU+sI0dEtD9fFnoBPpg==",
+      "path": "microsoft.semantickernel/1.77.0",
+      "hashPath": "microsoft.semantickernel.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Abstractions/1.75.0": {
+    "Microsoft.SemanticKernel.Abstractions/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x3JN7Eo9cNoRDYoqbhNmL1jn0VU/Ruv6MC9aARXGf45aBPh2nko4bdrgTN3Lfd5R3Mw1dZHQKTORPlcWbdQssQ==",
-      "path": "microsoft.semantickernel.abstractions/1.75.0",
-      "hashPath": "microsoft.semantickernel.abstractions.1.75.0.nupkg.sha512"
+      "sha512": "sha512-8aobJHE0hI01iVh+gJvCuqC9Ygjf+B5xeLefScUp0Y5xfWbvNfQpmsxuihG7Xyg2RFXQHOpC0lYe/qw8wMbOrA==",
+      "path": "microsoft.semantickernel.abstractions/1.77.0",
+      "hashPath": "microsoft.semantickernel.abstractions.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Agents.Abstractions/1.75.0": {
+    "Microsoft.SemanticKernel.Agents.Abstractions/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Lz41lRJxjPHFJ1b20jDvCs6hnWvmAxeHNIVK3ulgLBZZC+BTdTk8u9rERYUsWbOKd4I/fq+ZczZzrO31L5XBUQ==",
-      "path": "microsoft.semantickernel.agents.abstractions/1.75.0",
-      "hashPath": "microsoft.semantickernel.agents.abstractions.1.75.0.nupkg.sha512"
+      "sha512": "sha512-GUu5TtM8QNGdxdwC7Ta7yUhA88YKRrU8Qb8s8tyCkqry8PWWkkQBf+Z2Wy8f6AlIqV56hsIdLU+s/qTBaUVQyw==",
+      "path": "microsoft.semantickernel.agents.abstractions/1.77.0",
+      "hashPath": "microsoft.semantickernel.agents.abstractions.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Agents.Core/1.75.0": {
+    "Microsoft.SemanticKernel.Agents.Core/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-At8KtCWNt4siwoRfW+Wrs+TstHiguwrPQATL7z+5AANF1mcgKzZ32o4NbDJW1kyD5TBEakIzD90FQb6AuEt2PA==",
-      "path": "microsoft.semantickernel.agents.core/1.75.0",
-      "hashPath": "microsoft.semantickernel.agents.core.1.75.0.nupkg.sha512"
+      "sha512": "sha512-cP1hQGEa20J1yKu6a8hjkB7fXZnCdLaJ7YcJsrUb4HAS4bWxetW8dmhmpQifkCyA43291xTxboXvF5yLJ+6V4Q==",
+      "path": "microsoft.semantickernel.agents.core/1.77.0",
+      "hashPath": "microsoft.semantickernel.agents.core.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.75.0": {
+    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GBmvD8YqW0NjLW1JwGqgDXlhVFFQv+fOHWk3YYhnUKks05lDKDIqYw+e5LvaTZJ+7G+C8wsi75qw4gU0BYT9lQ==",
-      "path": "microsoft.semantickernel.connectors.azureopenai/1.75.0",
-      "hashPath": "microsoft.semantickernel.connectors.azureopenai.1.75.0.nupkg.sha512"
+      "sha512": "sha512-or5jro29W9/Jgq9iJ5FqyIzBUBjnUs2Somw52qToWfbNrS0Mb3c764sOyNmBxflZG9fVzW8SChCSsvFXuZJU5Q==",
+      "path": "microsoft.semantickernel.connectors.azureopenai/1.77.0",
+      "hashPath": "microsoft.semantickernel.connectors.azureopenai.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Connectors.Google/1.75.0-alpha": {
+    "Microsoft.SemanticKernel.Connectors.Google/1.77.0-alpha": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WFJ0Q1tfYPij2QdpDgZB3dS5UESb6Ky8SGcA6SIG/Wov/V6vQgyQCBnAat6hJXc7ThmApPJcCsJT2Y2EtQhCww==",
-      "path": "microsoft.semantickernel.connectors.google/1.75.0-alpha",
-      "hashPath": "microsoft.semantickernel.connectors.google.1.75.0-alpha.nupkg.sha512"
+      "sha512": "sha512-FpY/AJ6xtjikwtNV2W/P77BcEqL0BPxzMibyMO3fJ3Q/TJMD/+e/9M6+nF9Rh9NZnGud9cNrZtI4Aw2/9MJwUA==",
+      "path": "microsoft.semantickernel.connectors.google/1.77.0-alpha",
+      "hashPath": "microsoft.semantickernel.connectors.google.1.77.0-alpha.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Connectors.OpenAI/1.75.0": {
+    "Microsoft.SemanticKernel.Connectors.OpenAI/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PhkZN+dVIx6bBbK/9+KPpeltfUJcwJ0iHH/T3dqI4KjUD6tfbWUMm+GNkiGxv58UIVrG3TLvWeXajm+ElnTcoA==",
-      "path": "microsoft.semantickernel.connectors.openai/1.75.0",
-      "hashPath": "microsoft.semantickernel.connectors.openai.1.75.0.nupkg.sha512"
+      "sha512": "sha512-HZKfJ0+gUIRm91KElKvZIUtGH+ezUx0Y3YZnZGUvSdeIHhE65Bse1RMP2d2F4YqxiPBQT9/95Tb8aSPRFFu7Aw==",
+      "path": "microsoft.semantickernel.connectors.openai/1.77.0",
+      "hashPath": "microsoft.semantickernel.connectors.openai.1.77.0.nupkg.sha512"
     },
-    "Microsoft.SemanticKernel.Core/1.75.0": {
+    "Microsoft.SemanticKernel.Core/1.77.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cbQDbHYWU7hvR0j4B4uV9pxj+mL9seZo/130ckdlfbfMGly4mNiYI64DAQ9dF53CM8xt50eBXqmyedYv6DGysg==",
-      "path": "microsoft.semantickernel.core/1.75.0",
-      "hashPath": "microsoft.semantickernel.core.1.75.0.nupkg.sha512"
+      "sha512": "sha512-o02MBl/gg+f5qbFzuFNcEfkj8RovXF9vwvGhmPAwpxBMHmMaiW4zkbPit2fwSNFgsekbHB4T+u9bochJx6/mYQ==",
+      "path": "microsoft.semantickernel.core/1.77.0",
+      "hashPath": "microsoft.semantickernel.core.1.77.0.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.21.0": {
       "type": "package",

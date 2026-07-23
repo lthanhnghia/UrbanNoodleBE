@@ -54,6 +54,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
@@ -159,27 +163,27 @@
             },
             "Microsoft.SemanticKernel": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Abstractions": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Agents.Abstractions": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Agents.Core": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Connectors.Google": {
               "target": "Package",
-              "version": "[1.75.0-alpha, )"
+              "version": "[1.77.0-alpha, )"
             },
             "Microsoft.SemanticKernel.Core": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",

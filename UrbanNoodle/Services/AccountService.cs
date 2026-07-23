@@ -78,9 +78,14 @@ namespace UrbanNoodle.Service
             return new ListAccountDto(accounts, hasMore);
         }
 
-        public async Task<List<HistoryOrderUserDto>> HistoryOrderUserDto(int accountId, int lastId = 0, int size = 3)
+        public async Task<List<HistoryOrderUserDto>> HistoryOrderUserDto(int? id, int accountId, int lastId = 0, int size = 3)
         {
 
+            if (id.Value != accountId)
+            {
+
+                throw new UnauthorizedAccessException("Bạn không có quyền truy cập vào lịch sử đơn hàng của người khác.");
+            }
             var query = await _context.Order
                 .OrderByDescending(o => o.Id)
                 .Where(o => o.OrderedUser == accountId && (lastId == 0 || o.Id < lastId))

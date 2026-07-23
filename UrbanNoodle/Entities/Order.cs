@@ -41,6 +41,9 @@ public class Order
     [Column("address_id")]
     public int? AddressId { get; set; }
 
+    [ForeignKey("AddressId")]
+    public virtual Address? Address { get; set; }
+
     [Column("created_at")]
     public DateTime CreatedAt { get; set; }
 

@@ -3,6 +3,7 @@ using UrbanNoodle.ApplicationContext;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Dto.Order;
 using UrbanNoodle.Entities;
+using UrbanNoodle.Exceptions;
 using UrbanNoodle.Services.Interface;
 
 namespace UrbanNoodle.Services
@@ -68,10 +69,87 @@ namespace UrbanNoodle.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Lỗi tạo đơn hàng cho account {AccountId}", request.AccountId);
+                _logger.LogError(ex, "Lỗi tạo đơn hàng cho account {AccountId} và xảy ra tại {Message}", request.AccountId, ex.Message);
                 await transaction.RollbackAsync();
                 return new ApiResponse(500, "Lỗi hệ thống");
             }
+        }
+
+        public async Task<IEnumerable<GetOrderDto>> GetOrderAsync(int lastId, string? statusName, int size)
+        {
+            var result = await _context.Order
+                     .OrderByDescending(od => od.Id)
+                     .Where(od => (statusName == null || od.Status.StatusName == statusName) && (lastId == 0 || od.Id < lastId))
+                     .Take(size)
+                     .Select(od => new GetOrderDto
+                     {
+                         ClientName = od.OrderedByUser.FullName,
+                         ClientPhone = od.OrderedByUser.Phone,
+                         ClientAddress = od.Address.DetailAddress,
+                         OrderId = od.Id,
+                         StatusName = od.Status.StatusName,
+                         CreatedAt = od.CreatedAt,
+                         TotalPrice = od.Total,
+                         Items = od.OrdersItems.Select(oi => new OrderItemFoodDto
+                         {
+                             FoodName = oi.Food.FoodName,
+                             Quantity = oi.Quantity,
+                             Price = oi.Price
+                         }).ToList()
+                     })
+                     .ToListAsync();
+            return result;
+        }
+
+        public async Task<ApiResponse> UpdateOrderStatusAsync(int id, UpdateOrderStatusDto request)
+        {
+            var order = await _context.Order.FindAsync(id);
+            if (order == null)
+            {
+                throw new NotFoundException("Không tìm thấy đơn hàng này");
+            }
+
+            var currentStatus = await _context.Status.FindAsync(order.StatusId);
+            if (currentStatus == null)
+            {
+                throw new NotFoundException("Trạng thái hiện tại của đơn hàng không hợp lệ");
+            }
+
+
+            if (currentStatus.StatusName != request.StatusName)
+            {
+                throw new BadRequestException(
+                    $"Trạng thái đơn hàng đã thay đổi (hiện tại: {currentStatus.StatusName}), vui lòng tải lại trang.");
+            }
+
+            if (currentStatus.StatusName == "success" || currentStatus.StatusName == "cancelled")
+            {
+                throw new BadRequestException("Không thể chuyển đơn này sang trạng thái khác được nữa");
+            }
+
+            string? nextStatusName = currentStatus.StatusName switch
+            {
+                "ordered" => "confirmed",
+                "confirmed" => "success",
+                _ => null
+            };
+
+            if (nextStatusName == null)
+            {
+                throw new BadRequestException("Trạng thái đơn hàng không hợp lệ để chuyển tiếp");
+            }
+
+            var newStatus = await _context.Status
+                .FirstOrDefaultAsync(s => s.StatusName == nextStatusName);
+            if (newStatus == null)
+            {
+                throw new NotFoundException("Không có trạng thái này trong hệ thống");
+            }
+
+            order.StatusId = newStatus.Id;
+            await _context.SaveChangesAsync();
+
+            return new ApiResponse(200, "Cập nhật trạng thái đơn hàng thành công");
         }
     }
 }

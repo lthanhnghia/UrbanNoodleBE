@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using UrbanNoodle.Dto.Account;
 using UrbanNoodle.Service.Interface;
 using UrbanNoodle.Utils;
@@ -17,6 +18,7 @@ namespace UrbanNoodle.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "client")]
         [HttpGet("historyorder")]
         public async Task<IEnumerable<HistoryOrderUserDto>> GetHistoryOrder(
         [FromQuery] int accountId,
@@ -25,7 +27,7 @@ namespace UrbanNoodle.Controllers
         {
             var id = User.GetAccountId();
             _logger.LogInformation($"accountId: {id}");
-            return await _accountServices.HistoryOrderUserDto(accountId, lastId, size);
+            return await _accountServices.HistoryOrderUserDto(id, accountId, lastId, size);
         }
     }
 }

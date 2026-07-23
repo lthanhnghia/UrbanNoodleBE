@@ -1,12 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UrbanNoodle.Dto.Account;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Dto.Food;
-using UrbanNoodle.Service.Interface;
 using UrbanNoodle.Services.Interface;
-using UrbanNoodle.Dto.Category;
-using UrbanNoodle.Entities;
 
 namespace UrbanNoodle.Controllers
 {
@@ -21,27 +18,36 @@ namespace UrbanNoodle.Controllers
             _foodService = foodService;
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
+        [EnableRateLimiting("AdminPolicy")]
         public async Task<ActionResult<ApiResponse>> CreateFood([FromForm] CreateFoodDto request)
         {
 
             var result = await _foodService.CreateFoodAsync(request);
             return new ApiResponse(result.Status, result.Description);
         }
+
+        [Authorize(Roles = "admin")]
         [HttpPut("{ID}")]
-        public async Task<ActionResult<ApiResponse>> UpdateFood(int ID,[FromForm] UpdateFoodDto request)
+        [EnableRateLimiting("AdminPolicy")]
+        public async Task<ActionResult<ApiResponse>> UpdateFood(int ID, [FromForm] UpdateFoodDto request)
         {
-            var result = await _foodService.UpdateFoodAsync(ID,request);
+            var result = await _foodService.UpdateFoodAsync(ID, request);
             return new ApiResponse(result.Status, result.Description);
 
         }
+
+        [Authorize(Roles = "admin")]
         [HttpDelete("{ID}")]
+        [EnableRateLimiting("AdminPolicy")]
         public async Task<ActionResult<ApiResponse>> DeleteFood(int ID)
         {
             var result = await _foodService.DeleteFoodAsync(ID);
             return new ApiResponse(result.Status, result.Description);
 
         }
+
         [HttpGet]
         public async Task<ListFood> GetFood(
         [FromQuery] int lastId = 0,
@@ -49,7 +55,7 @@ namespace UrbanNoodle.Controllers
         [FromQuery] string? key = null)
         {
 
-            return await _foodService.GetFoodAsync(lastId, size,  key);
+            return await _foodService.GetFoodAsync(lastId, size, key);
         }
     }
 }

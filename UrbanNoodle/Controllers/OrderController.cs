@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UrbanNoodle.Dto.Food;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
-using UrbanNoodle.Services;
-using UrbanNoodle.Services.Interface;
 using UrbanNoodle.Dto.Order;
+using UrbanNoodle.Services.Interface;
 
 namespace UrbanNoodle.Controllers
 {
@@ -18,12 +17,35 @@ namespace UrbanNoodle.Controllers
             _orderService = orderService;
         }
 
+        [Authorize(Roles = "client")]
         [HttpPost]
-        public async Task<ActionResult<ApiResponse>> CreateFood([FromBody] CreateOrderDto request)
+        [EnableRateLimiting("OrderPolicy")]
+        public async Task<ActionResult<ApiResponse>> CreateOrder([FromBody] CreateOrderDto request)
         {
 
             var result = await _orderService.CreateOrderAsync(request);
             return new ApiResponse(result.Status, result.Description);
+        }
+
+        [Authorize(Roles = "client")]
+        [HttpPut("{ID}")]
+        public async Task<ActionResult<ApiResponse>> UpdateStatusOrder(int ID, [FromForm] UpdateOrderStatusDto request)
+        {
+            var result = await _orderService.UpdateOrderStatusAsync(ID, request);
+            return new ApiResponse(result.Status, result.Description);
+
+        }
+
+        [Authorize(Roles = "admin")]
+        [HttpGet]
+        public async Task<IEnumerable<GetOrderDto>> GetOrder(
+            [FromQuery] int lastId = 0,
+            [FromQuery] int size = 6,
+            [FromQuery] string? statusName = null
+         )
+        {
+
+            return await _orderService.GetOrderAsync(lastId, statusName, size);
         }
     }
 }

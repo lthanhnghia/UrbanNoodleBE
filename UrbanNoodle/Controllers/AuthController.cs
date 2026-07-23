@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Dto.Auth;
 using UrbanNoodle.Service.Interface;
@@ -17,6 +18,7 @@ namespace UrbanNoodle.Controllers
         }
 
         [HttpPost("login")]
+        [EnableRateLimiting("LoginPolicy")]
         public async Task<ActionResult<ResponseLoginDTO>> Login(LoginDto request)
         {
             var result = await _authService.LoginAsync(request);
@@ -24,6 +26,7 @@ namespace UrbanNoodle.Controllers
         }
 
         [HttpPost("register")]
+        [EnableRateLimiting("RegisterPolicy")]
         public async Task<ActionResult<ApiResponse>> Register(RegisterDto request)
         {
             var result = await _authService.RegisterAsync(request);

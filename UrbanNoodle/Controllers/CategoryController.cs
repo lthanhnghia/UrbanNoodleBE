@@ -1,21 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using UrbanNoodle.Dto.Account;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
-using UrbanNoodle.Services.Interface;
 using UrbanNoodle.Dto.Category;
-using UrbanNoodle.Service;
+using UrbanNoodle.Services.Interface;
 
 namespace UrbanNoodle.Controllers
 {
+    [Authorize(Roles = "admin")]
     [Route("api/[controller]")]
     [ApiController]
+    [EnableRateLimiting("AdminPolicy")]
     public class CategoryController : ControllerBase
     {
         ICategoryService _category;
         private readonly ILogger<CategoryController> _logger;
-        public CategoryController(ICategoryService category, ILogger<CategoryController> logger) { 
-             _category = category;
+        public CategoryController(ICategoryService category, ILogger<CategoryController> logger)
+        {
+            _category = category;
             _logger = logger;
         }
         [HttpPost]
@@ -33,7 +35,7 @@ namespace UrbanNoodle.Controllers
         [FromQuery] string? key = null)
         {
 
-            return await _category.GetCategoryAsync(lastId, size,  key);
+            return await _category.GetCategoryAsync(lastId, size, key);
         }
 
         [HttpGet("options")]

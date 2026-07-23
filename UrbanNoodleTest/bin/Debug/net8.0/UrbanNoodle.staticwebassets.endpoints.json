@@ -1,5 +1,990 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.fclnnej5gj.jpg",
+      "AssetFile": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:19:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fclnnej5gj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
+      "AssetFile": "images/foods/2f9ede7d-3d63-445c-9d99-8c391176e170.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:19:06 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
+      "AssetFile": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:25:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.tdazxf02f7.jpg",
+      "AssetFile": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:25:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tdazxf02f7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rwNioy51YWSvPC8MGt7kxfHjKKr0SGGTtK1uPZQt78E="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/45ae361f-f2dc-44f4-bfa7-ce3b295785a0.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.nm8e4cvc3u.webp",
+      "AssetFile": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp",
+      "AssetFile": "images/foods/51b71d70-3264-4426-b276-1aa45963fb6a.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.65mck3emp0.jpg",
+      "AssetFile": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:24:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "65mck3emp0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
+      "AssetFile": "images/foods/57eacbd2-f1de-49a3-9343-cc2525aa3fd0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:24:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5iTBsVLoaIOXnvPb9ysl769rtiMEmgMO2RNotNh1Fc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.d4k6ylp30l.jpg",
+      "AssetFile": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d4k6ylp30l"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "AssetFile": "images/foods/584a31fa-d1e4-4bea-8952-0b1170d94304.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdEytdJpmmUaW89mEmzvcnc1euabRvIEd5/YyxfxjzA="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.9q7vjr30bd.jpg",
+      "AssetFile": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:26:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9q7vjr30bd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "AssetFile": "images/foods/6c23fb18-fb43-4a99-baf9-81228e0126bd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:26:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4adYhr7CrUtcJ/IhFVAxESSXe+jhN6bIs3HSFGQetM8="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.2e7wvejwn9.jpg",
+      "AssetFile": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2e7wvejwn9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "AssetFile": "images/foods/868a60a4-4f15-421f-9777-b7e3c5da2c9f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:29:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmvIaZZc5u7dnBJOTCx/Px+IR341fCxmOYV111sHk/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.nm8e4cvc3u.webp",
+      "AssetFile": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:20:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "AssetFile": "images/foods/9ac55685-7e5c-4fcb-93f6-21929bd3fabb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:20:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.fuaa2tb3ap.jpg",
+      "AssetFile": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fuaa2tb3ap"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "AssetFile": "images/foods/bbf89fab-21be-4bb3-b48e-2082a9d8bbdf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:23:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mWQikNam/O3hviPq2gMCuAjl16Mr0GrcNIfR87yRX2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.nm8e4cvc3u.webp",
+      "AssetFile": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nm8e4cvc3u"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "AssetFile": "images/foods/cb24a164-9ad8-4e40-8dcc-7fbf1a6aed49.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L0cJSoMdtpIqLVAgtXZmCDq2GEr6Sye5ReYVV4UE17M="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.fclnnej5gj.jpg",
+      "AssetFile": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fclnnej5gj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "AssetFile": "images/foods/e4bc8ca7-bae5-42bb-8c7a-c76244a90869.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:21:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MVWbYbw1pG6rytHSjtTLQ714Y49QVUGUqTyHWny/pZ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.c9tvqr9b9z.webp",
+      "AssetFile": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:30:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9tvqr9b9z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk="
+        },
+        {
+          "Name": "label",
+          "Value": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "AssetFile": "images/foods/f63042c5-49b6-4baf-805f-9adab94e7b7c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jun 2026 13:30:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGSGPCq4O8rQkzolnwosXSg5uZq2pLbzFCsSjIrlnhk="
+        }
+      ]
+    }
+  ]
 }

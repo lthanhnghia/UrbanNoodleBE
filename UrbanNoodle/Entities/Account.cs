@@ -56,6 +56,10 @@ public class Account
     [InverseProperty("Account")]
     public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();
 
+
+    [InverseProperty("Account")]
+    public virtual ICollection<ChatMessages> ChatMessage { get; set; } = new List<ChatMessages>();
+
     public Account(string userName, string fullName, string email, string searchName, string phone, int roleId, DateTime createdAt)
     {
         UserName = userName;

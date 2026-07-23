@@ -37,7 +37,9 @@ namespace UrbanNoodle.Services
         }
 
         [KernelFunction("get_food")]
-        [Description("Lấy danh sách món ăn, giá, category. Chỉ gọi khi lịch sử chat chưa có menu.")]
+        [Description("Lấy danh sách món ăn hiện có trong menu của quán từ cơ sở dữ liệu thực tế. " +
+            "PHẢI gọi hàm này bất cứ khi nào người dùng hỏi về menu, món ăn, quán có gì, giá món ăn... " +
+            "KHÔNG được tự trả lời bằng kiến thức có sẵn vì menu thực tế luôn thay đổi.")]
         public async Task<IEnumerable<GetFoodDto>> GetFood()
         {
 
@@ -94,7 +96,7 @@ namespace UrbanNoodle.Services
                     CreatedAt = DateTime.UtcNow,
                 };
                 _context.Order.Add(order);
-                await _context.SaveChangesAsync(); // lần 1: lấy order.Id
+                await _context.SaveChangesAsync();
 
                 decimal total = 0;
                 var orderItems = request.Item.Select(item =>

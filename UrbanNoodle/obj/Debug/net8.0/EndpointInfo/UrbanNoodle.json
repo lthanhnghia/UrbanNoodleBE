@@ -469,41 +469,23 @@
         "tags": [
           "Dashboard"
         ],
-        "parameters": [
-          {
-            "name": "start",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "end",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DashboardDto"
+                  "$ref": "#/components/schemas/DashboardSummaryDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DashboardDto"
+                  "$ref": "#/components/schemas/DashboardSummaryDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DashboardDto"
+                  "$ref": "#/components/schemas/DashboardSummaryDto"
                 }
               }
             }
@@ -821,6 +803,139 @@
             }
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "lastId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 6
+            }
+          },
+          {
+            "name": "statusName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOrderDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOrderDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOrderDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Order/{ID}": {
+      "put": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "StatusName"
+                ],
+                "type": "object",
+                "properties": {
+                  "StatusName": {
+                    "pattern": "^(ordered|confirmed|success|cancelled)$",
+                    "type": "string"
+                  },
+                  "ConfirmedBy": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "StatusName": {
+                  "style": "form"
+                },
+                "ConfirmedBy": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/WeatherForecast": {
@@ -934,35 +1049,32 @@
         },
         "additionalProperties": false
       },
-      "DashboardDto": {
+      "DashboardSummaryDto": {
         "type": "object",
         "properties": {
-          "totalAmount": {
+          "totalRevenue": {
             "type": "number",
             "format": "double"
           },
-          "numberOrder": {
+          "totalOrders": {
             "type": "integer",
             "format": "int32"
           },
-          "foodName": {
+          "mostOrderedByQuantity": {
             "type": "string",
             "nullable": true
           },
-          "totalSold": {
+          "totalQuantity": {
             "type": "integer",
             "format": "int32"
           },
-          "numberAccount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "topFood": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TopFoodDto"
-            },
+          "mostFrequentInOrders": {
+            "type": "string",
             "nullable": true
+          },
+          "orderCount": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1010,6 +1122,47 @@
           },
           "categoryName": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetOrderDto": {
+        "type": "object",
+        "properties": {
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totalPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderItemFoodDto"
+            },
             "nullable": true
           }
         },
@@ -1122,6 +1275,24 @@
         },
         "additionalProperties": false
       },
+      "OrderItemFoodDto": {
+        "type": "object",
+        "properties": {
+          "foodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "PartDto": {
         "type": "object",
         "properties": {
@@ -1185,24 +1356,6 @@
           "token": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "TopFoodDto": {
-        "type": "object",
-        "properties": {
-          "foodName": {
-            "type": "string",
-            "nullable": true
-          },
-          "totalOrders": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "revenue": {
-            "type": "number",
-            "format": "double"
           }
         },
         "additionalProperties": false

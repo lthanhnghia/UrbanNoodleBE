@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
 using UrbanNoodle.Services.Interface;
 using UrbanNoodle.Utils;
@@ -18,12 +19,14 @@ namespace UrbanNoodle.Controllers
         }
 
         [HttpPost]
+        [EnableRateLimiting("ChatbotPolicy")]
         public async Task<ApiResponse> chatAl(PartDto request)
         {
 
             int? accountId = User.GetAccountId();
 
             var response = await _alService.ChatAsync(request.text, accountId);
+
             return response;
         }
     }

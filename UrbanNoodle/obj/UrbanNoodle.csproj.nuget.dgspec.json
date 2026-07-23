@@ -72,27 +72,27 @@
             },
             "Microsoft.SemanticKernel": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Abstractions": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Agents.Abstractions": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Agents.Core": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.SemanticKernel.Connectors.Google": {
               "target": "Package",
-              "version": "[1.75.0-alpha, )"
+              "version": "[1.77.0-alpha, )"
             },
             "Microsoft.SemanticKernel.Core": {
               "target": "Package",
-              "version": "[1.75.0, )"
+              "version": "[1.77.0, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",

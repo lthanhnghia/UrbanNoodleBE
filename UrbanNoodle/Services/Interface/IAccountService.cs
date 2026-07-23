@@ -10,7 +10,7 @@ namespace UrbanNoodle.Service.Interface
             (int lastId = 0, int size = 5, string? key = null);
         Task<ApiResponse> UpdateAccountAsync(int id, UpdateAccountDto request);
         Task<ApiResponse> DeleteAccountAsync(int id);
-        Task<List<HistoryOrderUserDto>> HistoryOrderUserDto(int accountId, int lastId = 0, int size = 3);
+        Task<List<HistoryOrderUserDto>> HistoryOrderUserDto(int? id, int accountId, int lastId = 0, int size = 3);
 
     }
 }

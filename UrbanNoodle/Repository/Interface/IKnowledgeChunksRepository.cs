@@ -2,6 +2,6 @@
 {
     public interface IKnowledgeChunksRepository
     {
-        Task<List<string>> SearchSimilarContextAsync(float[] queryVector);
+        public Task<List<string>> SearchSimilarContextAsync(float[] queryVector);
     }
 }

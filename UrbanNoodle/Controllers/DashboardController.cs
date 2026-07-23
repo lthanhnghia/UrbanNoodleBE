@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using UrbanNoodle.Dto;
-using UrbanNoodle.Dto.Account;
-using UrbanNoodle.Services;
 using UrbanNoodle.Services.Interface;
 
 namespace UrbanNoodle.Controllers
 {
+    [Authorize(Roles = "admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class DashboardController : ControllerBase
@@ -21,12 +21,11 @@ namespace UrbanNoodle.Controllers
         }
 
         [HttpGet]
-        public async Task<DashboardDto> GetAccount(
-     [FromQuery] DateTime? start = null,
-     [FromQuery] DateTime? end = null)
+        [EnableRateLimiting("AdminPolicy")]
+        public async Task<DashboardSummaryDto> GetAccount()
         {
 
-            return await _service.GetDashboard(start,end);
+            return await _service.GetDashboardStatisticsAsync();
         }
     }
 }

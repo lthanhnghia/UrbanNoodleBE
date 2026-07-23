@@ -128,13 +128,11 @@
           }
         }
       },
-      "Microsoft.Agents.AI.Abstractions/1.0.0-preview.251009.1": {
+      "Microsoft.Agents.AI.Abstractions/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.AI.Abstractions": "9.9.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.9",
-          "System.Diagnostics.DiagnosticSource": "9.0.9"
+          "Microsoft.Extensions.AI.Abstractions": "10.4.0",
+          "System.Text.Json": "10.0.4"
         },
         "compile": {
           "lib/net8.0/Microsoft.Agents.AI.Abstractions.dll": {
@@ -203,13 +201,13 @@
           "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/8.0.2": {
+      "Microsoft.EntityFrameworkCore/8.0.29": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.2",
-          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.2",
-          "Microsoft.Extensions.Caching.Memory": "8.0.0",
-          "Microsoft.Extensions.Logging": "8.0.0"
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.29",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.29",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.Extensions.Logging": "8.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
@@ -225,7 +223,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/8.0.2": {
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.29": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -238,13 +236,29 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/8.0.2": {
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.29": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.29"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
@@ -349,13 +363,13 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/8.0.0": {
+      "Microsoft.Extensions.Caching.Memory/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Options": "8.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
@@ -506,12 +520,12 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging/8.0.0": {
+      "Microsoft.Extensions.Logging/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Logging.dll": {
@@ -745,11 +759,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel/1.75.0": {
+      "Microsoft.SemanticKernel/1.77.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.dll": {
@@ -762,7 +776,7 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Abstractions/1.75.0": {
+      "Microsoft.SemanticKernel.Abstractions/1.77.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.1",
@@ -782,11 +796,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Agents.Abstractions/1.75.0": {
+      "Microsoft.SemanticKernel.Agents.Abstractions/1.77.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Agents.AI.Abstractions": "1.0.0-preview.251009.1",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
+          "Microsoft.Agents.AI.Abstractions": "1.0.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
           "System.Text.Json": "10.0.6"
         },
         "compile": {
@@ -800,11 +814,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Agents.Core/1.75.0": {
+      "Microsoft.SemanticKernel.Agents.Core/1.77.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.SemanticKernel.Agents.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Agents.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Agents.Core.dll": {
@@ -817,12 +831,12 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.75.0": {
+      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.77.0": {
         "type": "package",
         "dependencies": {
           "Azure.AI.OpenAI": "2.9.0-beta.1",
-          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
@@ -835,13 +849,13 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.Google/1.75.0-alpha": {
+      "Microsoft.SemanticKernel.Connectors.Google/1.77.0-alpha": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Auth": "1.73.0",
           "Google.GenAI": "0.11.0",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0"
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.Google.dll": {
@@ -854,11 +868,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.OpenAI/1.75.0": {
+      "Microsoft.SemanticKernel.Connectors.OpenAI/1.77.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.AI.OpenAI": "10.5.0",
-          "Microsoft.SemanticKernel.Core": "1.75.0",
+          "Microsoft.SemanticKernel.Core": "1.77.0",
           "OpenAI": "2.10.0"
         },
         "compile": {
@@ -872,11 +886,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Core/1.75.0": {
+      "Microsoft.SemanticKernel.Core/1.77.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "10.0.2",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
           "System.Numerics.Tensors": "10.0.6"
         },
         "compile": {
@@ -2955,12 +2969,12 @@
         "dependencies": {
           "DotNetEnv": "3.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
-          "Microsoft.SemanticKernel": "1.75.0",
-          "Microsoft.SemanticKernel.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Agents.Abstractions": "1.75.0",
-          "Microsoft.SemanticKernel.Agents.Core": "1.75.0",
-          "Microsoft.SemanticKernel.Connectors.Google": "1.75.0-alpha",
-          "Microsoft.SemanticKernel.Core": "1.75.0",
+          "Microsoft.SemanticKernel": "1.77.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Agents.Abstractions": "1.77.0",
+          "Microsoft.SemanticKernel.Agents.Core": "1.77.0",
+          "Microsoft.SemanticKernel.Connectors.Google": "1.77.0-alpha",
+          "Microsoft.SemanticKernel.Core": "1.77.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
           "Pgvector.EntityFrameworkCore": "0.2.2",
@@ -3172,15 +3186,17 @@
         "lib/netstandard2.0/Google.GenAI.xml"
       ]
     },
-    "Microsoft.Agents.AI.Abstractions/1.0.0-preview.251009.1": {
-      "sha512": "8Bfppenx9ETyhDsJ30Hixy/zf/t2t/vt03+jl7uLd5XgadZo+xQcEYa16ANHUAcJzBH7ou85sSRO8MohNiFgiw==",
+    "Microsoft.Agents.AI.Abstractions/1.0.0": {
+      "sha512": "xvQkgKyKk/9uvaejku15MF7kQHDCCslSWgb7YQShWxivtgjgFS5NivTDAVcwXAL5MKakLmDAyUCKzzI6h8Xvzg==",
       "type": "package",
-      "path": "microsoft.agents.ai.abstractions/1.0.0-preview.251009.1",
+      "path": "microsoft.agents.ai.abstractions/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET.md",
         "icon.png",
+        "lib/net10.0/Microsoft.Agents.AI.Abstractions.dll",
+        "lib/net10.0/Microsoft.Agents.AI.Abstractions.xml",
         "lib/net472/Microsoft.Agents.AI.Abstractions.dll",
         "lib/net472/Microsoft.Agents.AI.Abstractions.xml",
         "lib/net8.0/Microsoft.Agents.AI.Abstractions.dll",
@@ -3189,7 +3205,7 @@
         "lib/net9.0/Microsoft.Agents.AI.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Agents.AI.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Agents.AI.Abstractions.xml",
-        "microsoft.agents.ai.abstractions.1.0.0-preview.251009.1.nupkg.sha512",
+        "microsoft.agents.ai.abstractions.1.0.0.nupkg.sha512",
         "microsoft.agents.ai.abstractions.nuspec"
       ]
     },
@@ -3325,47 +3341,65 @@
         "microsoft.codecoverage.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/8.0.2": {
-      "sha512": "6QlvBx4rdawW3AkkCsGVV+8qRLk34aknV5JD40s1hbVR18vKmT2KDl2DW83nHcPX7f4oebQ3BD1UMNCI/gkE0g==",
+    "Microsoft.EntityFrameworkCore/8.0.29": {
+      "sha512": "+4Md9S8HcJEkoatsVTiYrF621StlxS8bpnQMSYYbAVRnMGHWLhtlbgqTYdO8+zxuyIqAjiFAYtWr/oJ9KC7X7Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/8.0.2",
+      "path": "microsoft.entityframeworkcore/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "PACKAGE.md",
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/8.0.2": {
-      "sha512": "DjDKp++BTKFZmX+xLTow7grQTY+pImKfhGW68Zf8myiL3zyJ3b8RZbnLsWGNCqKQIF6hJIz/zA/zmERobFwV0A==",
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.29": {
+      "sha512": "z5JLj2mWCuxnhP7oP9udaHxOK5FQWPpvjXeTmCMjRRCYZ1k+gUlb9Vznx2LHSFXww4ZHjztKbxezNTTu/T6znw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/8.0.2",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/8.0.2": {
-      "sha512": "LI7awhc0fiAKvcUemsqxXUWqzAH9ywTSyM1rpC1un4p5SE1bhr5nRLvyRVbKRzKakmnNNY3to8NPDnoySEkxVw==",
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.29": {
+      "sha512": "rC/q2K3JGSKJpEraRDRJ3NUOH4e+CpwwCIbbKGXi87J6LuGdIg0+yggCSPCmV2PwSSlegZSg+le++O4IBRecLA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/8.0.2",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
+        "docs/PACKAGE.md",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.8.0.29.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.29": {
+      "sha512": "LLVpKlP2bTE+Zbbq63pAT3ObaIiqEsecOD5jwIAV0OAJ9hZFzdAMElzcT/jnaFYIYFu37HzCUwtFQv0lujD7bg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.29",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.8.0.29.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.2": {
@@ -3711,10 +3745,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Caching.Memory/8.0.0": {
-      "sha512": "7pqivmrZDzo1ADPkRwjy+8jtRKWRCPag9qPI+p7sgu7Q4QreWhcvbiWXsbhP+yY8XSiDvZpu2/LWdBv7PnmOpQ==",
+    "Microsoft.Extensions.Caching.Memory/8.0.1": {
+      "sha512": "HFDnhYLccngrzyGgHkjEDU5FMLn4MpOsr5ElgsBMC4yx6lJh4jeWO7fHS8+TXPq+dgxCmUa/Trl8svObmwW4QA==",
       "type": "package",
-      "path": "microsoft.extensions.caching.memory/8.0.0",
+      "path": "microsoft.extensions.caching.memory/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3736,7 +3770,7 @@
         "lib/net8.0/Microsoft.Extensions.Caching.Memory.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3933,10 +3967,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging/8.0.0": {
-      "sha512": "tvRkov9tAJ3xP51LCv3FJ2zINmv1P8Hi8lhhtcKGqM+ImiTCC84uOPEI4z8Cdq2C3o9e+Aa0Gw0rmrsJD77W+w==",
+    "Microsoft.Extensions.Logging/8.0.1": {
+      "sha512": "4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
       "type": "package",
-      "path": "microsoft.extensions.logging/8.0.0",
+      "path": "microsoft.extensions.logging/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3960,7 +3994,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
-        "microsoft.extensions.logging.8.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.8.0.1.nupkg.sha512",
         "microsoft.extensions.logging.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4341,10 +4375,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel/1.75.0": {
-      "sha512": "qDUnqxj3wbbM2i9iqcHdEjy3CQA8SdM/iJvb+LCi5ZAaq16H/ILOKfmEF0/YMgO8sRy4rSjF50kIW906uZVeww==",
+    "Microsoft.SemanticKernel/1.77.0": {
+      "sha512": "A8HtEy+gKpOFPPS/IiJAcFIHbP0l6qAMKtg9bxw6cJJMUasWhLyU0weKi6FaL3V5lLuqU+sI0dEtD9fFnoBPpg==",
       "type": "package",
-      "path": "microsoft.semantickernel/1.75.0",
+      "path": "microsoft.semantickernel/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4356,14 +4390,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.xml",
-        "microsoft.semantickernel.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Abstractions/1.75.0": {
-      "sha512": "x3JN7Eo9cNoRDYoqbhNmL1jn0VU/Ruv6MC9aARXGf45aBPh2nko4bdrgTN3Lfd5R3Mw1dZHQKTORPlcWbdQssQ==",
+    "Microsoft.SemanticKernel.Abstractions/1.77.0": {
+      "sha512": "8aobJHE0hI01iVh+gJvCuqC9Ygjf+B5xeLefScUp0Y5xfWbvNfQpmsxuihG7Xyg2RFXQHOpC0lYe/qw8wMbOrA==",
       "type": "package",
-      "path": "microsoft.semantickernel.abstractions/1.75.0",
+      "path": "microsoft.semantickernel.abstractions/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4375,14 +4409,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.xml",
-        "microsoft.semantickernel.abstractions.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.abstractions.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.abstractions.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Agents.Abstractions/1.75.0": {
-      "sha512": "Lz41lRJxjPHFJ1b20jDvCs6hnWvmAxeHNIVK3ulgLBZZC+BTdTk8u9rERYUsWbOKd4I/fq+ZczZzrO31L5XBUQ==",
+    "Microsoft.SemanticKernel.Agents.Abstractions/1.77.0": {
+      "sha512": "GUu5TtM8QNGdxdwC7Ta7yUhA88YKRrU8Qb8s8tyCkqry8PWWkkQBf+Z2Wy8f6AlIqV56hsIdLU+s/qTBaUVQyw==",
       "type": "package",
-      "path": "microsoft.semantickernel.agents.abstractions/1.75.0",
+      "path": "microsoft.semantickernel.agents.abstractions/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4394,14 +4428,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Agents.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Agents.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Agents.Abstractions.xml",
-        "microsoft.semantickernel.agents.abstractions.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.agents.abstractions.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.agents.abstractions.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Agents.Core/1.75.0": {
-      "sha512": "At8KtCWNt4siwoRfW+Wrs+TstHiguwrPQATL7z+5AANF1mcgKzZ32o4NbDJW1kyD5TBEakIzD90FQb6AuEt2PA==",
+    "Microsoft.SemanticKernel.Agents.Core/1.77.0": {
+      "sha512": "cP1hQGEa20J1yKu6a8hjkB7fXZnCdLaJ7YcJsrUb4HAS4bWxetW8dmhmpQifkCyA43291xTxboXvF5yLJ+6V4Q==",
       "type": "package",
-      "path": "microsoft.semantickernel.agents.core/1.75.0",
+      "path": "microsoft.semantickernel.agents.core/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4413,14 +4447,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Agents.Core.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Agents.Core.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Agents.Core.xml",
-        "microsoft.semantickernel.agents.core.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.agents.core.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.agents.core.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.75.0": {
-      "sha512": "GBmvD8YqW0NjLW1JwGqgDXlhVFFQv+fOHWk3YYhnUKks05lDKDIqYw+e5LvaTZJ+7G+C8wsi75qw4gU0BYT9lQ==",
+    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.77.0": {
+      "sha512": "or5jro29W9/Jgq9iJ5FqyIzBUBjnUs2Somw52qToWfbNrS0Mb3c764sOyNmBxflZG9fVzW8SChCSsvFXuZJU5Q==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.azureopenai/1.75.0",
+      "path": "microsoft.semantickernel.connectors.azureopenai/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4432,14 +4466,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
-        "microsoft.semantickernel.connectors.azureopenai.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.azureopenai.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.connectors.azureopenai.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.Google/1.75.0-alpha": {
-      "sha512": "WFJ0Q1tfYPij2QdpDgZB3dS5UESb6Ky8SGcA6SIG/Wov/V6vQgyQCBnAat6hJXc7ThmApPJcCsJT2Y2EtQhCww==",
+    "Microsoft.SemanticKernel.Connectors.Google/1.77.0-alpha": {
+      "sha512": "FpY/AJ6xtjikwtNV2W/P77BcEqL0BPxzMibyMO3fJ3Q/TJMD/+e/9M6+nF9Rh9NZnGud9cNrZtI4Aw2/9MJwUA==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.google/1.75.0-alpha",
+      "path": "microsoft.semantickernel.connectors.google/1.77.0-alpha",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4451,14 +4485,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.Google.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.Google.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.Google.xml",
-        "microsoft.semantickernel.connectors.google.1.75.0-alpha.nupkg.sha512",
+        "microsoft.semantickernel.connectors.google.1.77.0-alpha.nupkg.sha512",
         "microsoft.semantickernel.connectors.google.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.OpenAI/1.75.0": {
-      "sha512": "PhkZN+dVIx6bBbK/9+KPpeltfUJcwJ0iHH/T3dqI4KjUD6tfbWUMm+GNkiGxv58UIVrG3TLvWeXajm+ElnTcoA==",
+    "Microsoft.SemanticKernel.Connectors.OpenAI/1.77.0": {
+      "sha512": "HZKfJ0+gUIRm91KElKvZIUtGH+ezUx0Y3YZnZGUvSdeIHhE65Bse1RMP2d2F4YqxiPBQT9/95Tb8aSPRFFu7Aw==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.openai/1.75.0",
+      "path": "microsoft.semantickernel.connectors.openai/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4470,14 +4504,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
-        "microsoft.semantickernel.connectors.openai.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.openai.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.connectors.openai.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Core/1.75.0": {
-      "sha512": "cbQDbHYWU7hvR0j4B4uV9pxj+mL9seZo/130ckdlfbfMGly4mNiYI64DAQ9dF53CM8xt50eBXqmyedYv6DGysg==",
+    "Microsoft.SemanticKernel.Core/1.77.0": {
+      "sha512": "o02MBl/gg+f5qbFzuFNcEfkj8RovXF9vwvGhmPAwpxBMHmMaiW4zkbPit2fwSNFgsekbHB4T+u9bochJx6/mYQ==",
       "type": "package",
-      "path": "microsoft.semantickernel.core/1.75.0",
+      "path": "microsoft.semantickernel.core/1.77.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4489,7 +4523,7 @@
         "lib/net8.0/Microsoft.SemanticKernel.Core.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.xml",
-        "microsoft.semantickernel.core.1.75.0.nupkg.sha512",
+        "microsoft.semantickernel.core.1.77.0.nupkg.sha512",
         "microsoft.semantickernel.core.nuspec"
       ]
     },
@@ -8808,6 +8842,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.EntityFrameworkCore.InMemory >= 8.0.29",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "UrbanNoodle >= 1.0.0",
       "coverlet.collector >= 6.0.0",
@@ -8869,6 +8904,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[8.0.29, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.8.0, )"

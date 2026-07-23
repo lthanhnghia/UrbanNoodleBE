@@ -1,9 +1,7 @@
-﻿using Pgvector.EntityFrameworkCore;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using Pgvector.EntityFrameworkCore;
 using UrbanNoodle.ApplicationContext;
 using UrbanNoodle.Repository.Interface;
-using UrbanNoodle.Service;
-using Microsoft.EntityFrameworkCore;
 namespace UrbanNoodle.Repository
 {
     public class KnowledgeChunksRepository : IKnowledgeChunksRepository
@@ -20,12 +18,12 @@ namespace UrbanNoodle.Repository
         public async Task<List<string>> SearchSimilarContextAsync(float[] queryVector)
         {
             var pgVector = new Pgvector.Vector(queryVector);
-            
-           
+
+
             return await _context.KnowledgeChunks
                 .OrderBy(x => x.Embedding.CosineDistance(pgVector))
-                .Take(3)
-                .Select(x => x.Content) 
+                .Take(2)
+                .Select(x => x.Content)
                 .ToListAsync();
         }
     }
